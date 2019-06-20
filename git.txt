@@ -1,0 +1,14 @@
+初始化: git init
+添加在暂存区： git add .
+提交： git commit -m '备注'
+上传： git push origin master(master要上传的分支地方)
+查看分支: git branch
+切换分支：git checkout branchname
+创建分支: git branch brachname
+创建并切换：git checkout -b branchname
+删除分支：git branch -d branchname
+合并分支：先要切换到master分支（git checkout master）
+	  git merge branchname
+拉取某分支提交的信心： git pull origin branchname
+:wq!保存
+:q!退出
