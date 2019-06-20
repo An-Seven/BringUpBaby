@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, BrowserRouter,Switch } from 'react-router-dom'
-import './Rem/rem'
-import './main.scss'
 import App from './App';
+import { BrowserRouter, Route } from 'react-router-dom'
+import './Rem'
+import './main.scss'
+import 'antd-mobile/dist/antd-mobile.css';
+import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
-    <BrowserRouter>
-            <Route component={App} />
-    </BrowserRouter>
+        <BrowserRouter >
+            <Route  path="/" component={App} />
+        </BrowserRouter>
     , document.getElementById('root'));
+serviceWorker.unregister();

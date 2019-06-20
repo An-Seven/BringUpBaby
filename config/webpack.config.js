@@ -285,6 +285,7 @@ module.exports = function(webpackEnv) {
         // Make sure your source files are compiled, as they will not be processed in any way.
         new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),
       ],
+
     },
     resolveLoader: {
       plugins: [
@@ -301,7 +302,7 @@ module.exports = function(webpackEnv) {
 
         // First, run the linter.
         // It's important to do this before Babel processes the JS.
-     /*    {
+       /*  {
           test: /\.(js|mjs|jsx|ts|tsx)$/,
           enforce: 'pre',
           use: [
@@ -353,8 +354,8 @@ module.exports = function(webpackEnv) {
                         },
                       },
                     },
-                  ],//antd按需引入
-                  ["import", { libraryName: "antd-mobile", style: "css" }]
+                  ],
+                  ['import',{libraryName:"antd-mobile",style:"css"}]
                 ],
                 // This is a feature of `babel-loader` for webpack (not Babel itself).
                 // It enables caching results in ./node_modules/.cache/babel-loader/
