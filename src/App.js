@@ -10,7 +10,7 @@ import Baby from "./views/baby/Baby";
 import Community from './views/community/Community'
 function App() {
   return (
-    <div className="App" style={{paddingTop:'.5rem'}}>
+    <div className="App" style={{paddingTop:'.5rem',paddingBottom:".5rem"}}>
 
         <Navbar/>
         
