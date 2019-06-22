@@ -1,10 +1,37 @@
 .home {
+    .nav {
+        display: flex;
+        width: 100%;
+        height: .8rem;
+        justify-content: space-between;
+        margin: .05rem 0 .2rem 0;
+
+        a {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            font-size: .14rem;
+            color:#101010;
+
+            img {
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                margin: 0 0 .1rem .22rem;
+            }
+        }
+    }
+
     .center {
         padding: .19rem;
+        padding-top: 0;
 
         .title {
             display: flex;
             vertical-align: baseline;
+            margin: .1rem 0;
 
             h3 {
                 color: #101010;
@@ -28,6 +55,7 @@
                 width: 1.32rem;
                 height: .39rem;
             }
+
         }
 
         .bar,
@@ -68,14 +96,16 @@
 
         .bar2 {
             position: relative;
+
             .bar2_right {
                 float: left;
-               padding-top: .1rem;
+                padding-top: .1rem;
                 margin-left: .25rem;
                 text-align: left;
                 color: #101010;
                 font-size: .14rem;
-                 .last {
+
+                .last {
                     float: right;
                     width: 1.04rem;
                     height: 0.39rem;
@@ -83,49 +113,152 @@
                     text-align: center;
                     background-color: #E5E5E5;
                     color: #101010;
-                    font-size:.14rem;
+                    font-size: .14rem;
                     position: absolute;
-                    right: 0;bottom: 0;
+                    right: 0;
+                    bottom: .11rem;
                 }
             }
         }
-        .active{
+
+        .active {
             height: 1.2rem;
             background-color: #e5e5e5;
-            margin-top:.1rem ;
+            margin-top: .1rem;
             box-shadow: 1px 1px 1px 1px rgba(223, 223, 223, 1);
             text-align: left;
-            padding:.12rem 0 0 .68rem;
+            padding: .12rem 0 0 .68rem;
             position: relative;
-            h1{
-                margin:0;
-                font-size: .2rem;color:#101010;
+
+            h1 {
+                margin: 0;
+                font-size: .2rem;
+                color: #101010;
             }
-            h2,h3{
-                color:#7d7d7d;font-size: .18rem;
+
+            h2,
+            h3 {
+                color: #7d7d7d;
+                font-size: .18rem;
             }
-            h3{
+
+            h3 {
                 font-size: .14rem;
             }
-            .icons{
-                width: .45rem;height: 0.45rem;line-height: .45rem;
-                position: absolute;top:.15rem;right: 0;
+
+            .icons {
+                width: .45rem;
+                height: 0.45rem;
+                line-height: .45rem;
+                position: absolute;
+                top: .15rem;
+                right: 0;
                 background-color: #fff;
-               i{
-                   margin-top: .08rem
-               }
+
+                i {
+                    margin-top: .08rem
+                }
             }
         }
-        .tab{
+
+        .tab {
             display: flex;
             widows: 100%;
-            span{
+
+            span {
                 flex: 1;
                 height: .4rem;
-                border:1px #bbb solid;
-                text-align: center;line-height: .4rem;
+                border: 1px #bbb solid;
+                text-align: center;
+                line-height: .4rem;
                 font-size: .14rem;
                 color: #101010;
+                box-shadow: 1px 1px 1px 1px rgba(223, 223, 223, 1);
+            }
+        }
+    }
+
+    .hotsay {
+        
+        width: 3.34rem;
+        height: .3rem;
+        line-height: .3rem;
+        border-radius: .06rem;
+        background-color: rgba(229, 229, 229, 1);
+        color: rgba(16, 16, 16, 1);
+        font-size: .14rem;
+        text-align: center;
+        font-family: Arial;
+        border: 1px solid rgba(255, 255, 255, 0);
+    }
+
+    .hotsay_bar {
+        width: 3.34rem;
+
+        >p {
+            display: inline-block;
+            width: .6rem;
+            height: .17rem;
+            color: rgba(135, 144, 157, 1);
+            font-size: .12rem;
+            text-align: left;
+            font-family: PingFangSC-regular;
+            margin: .13rem 0;
+        }
+
+        .bar3 {   
+            box-shadow: 1px 1px 1px 1px rgba(223, 223, 223, 1);
+            width: 100%;
+            height: 0.9rem;
+            border: 1px #bbbbbb solid;
+
+            .left {
+                padding-left: .13rem;
+                width: 1.53rem;
+                height: 0.9rem;
+                float: left;
+
+                img {
+                    width: 0.27rem;
+                    height: 0.27rem;
+                    border-radius: 50%;
+                    margin: .05rem .05rem 0 0;
+                }
+
+                p {
+                    display: inline-block;
+                    width: .56rem;
+                    height: .30rem;
+                    line-height: .3rem;
+                    color: rgba(229, 229, 229, 1);
+                    font-size: 14px;
+                    text-align: left;
+                    font-family: PingFangSC-regular;
+                }
+
+                span {
+                    display: block;
+                    width: 1.17rem;
+                    height: .41rem;
+                    color: rgba(181, 181, 181, 1);
+                    font-size: .13rem;
+                    text-align: left;
+                    font-family: PingFangSC-regular;
+                    margin-left: .21rem;
+
+                }
+            }
+
+            .right {
+                float: right;
+                width: 1.66rem;
+                height: 0.9rem;
+
+                img {
+                    width: 1.66rem;
+                    height: 0.9rem;
+                }
+
             }
         }
     }

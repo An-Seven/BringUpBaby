@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App" style={{paddingTop:'.5rem',paddingBottom:".5rem"}}>
 
-        <Navbar/>
+        {/* <Navbar/> */}
         
         <Switch>
           <Route  path='/home' component={Home}/>
