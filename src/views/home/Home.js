@@ -15,7 +15,7 @@ class Home extends React.Component {
     }
     render() {
         return (<div className="home" >
-            <Navbar />
+            {/* <Navbar /> */}
             <Banner />
             <div className="nav">
                     <a href=""><img src="http://iph.href.lu/50x50" alt=""/>早教启蒙</a>
@@ -55,7 +55,7 @@ class Home extends React.Component {
                 </span>
                     </div>
                 </div>
-
+                    div.home
                 <div className="bar2">
                     <img src="http://iph.href.lu/100x100?text=bar_img" alt="" />
                     <div className="bar2_right">
