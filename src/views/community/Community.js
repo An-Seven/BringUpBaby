@@ -1,8 +1,9 @@
 import React from 'react'
+import Back from '@/components/back/Back';
 class Community extends React.Component{
     render(){
         return(
-            <h1> 我是Community</h1>
+           <Back data={{bc:1,title:'12weqweqw3'}}/>
         )
 
     }
