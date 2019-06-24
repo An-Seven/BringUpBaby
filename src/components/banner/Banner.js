@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
-import axios from 'axios'
+import {getDate} from '@/api'
 import {Carousel} from 'antd-mobile'
 class Banner extends Component {
     state = {
-      bannerList:['http://img5.imgtn.bdimg.com/it/u=3300305952,1328708913&fm=26&gp=0.jpg',
-      'http://k.zol-img.com.cn/sjbbs/7692/a7691515_s.jpg', 
-      'http://pic15.nipic.com/20110628/1369025_192645024000_2.jpg']
+      bannerList:[]
        
+      }
+     async componentDidMount(){
+       this.setState({
+         bannerList:await getDate('/getBanner')
+       })
       }
   render() {
     return (
@@ -22,7 +25,7 @@ class Banner extends Component {
               style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
             >
               <img
-                src={val}
+                src={val.imgsrc}
                 alt=""
                 style={{ width: '100%', verticalAlign: 'top',height:'2rem' }}
               />

@@ -1,12 +1,10 @@
 import axios from 'axios'
-const  Async_Date=(url,method,data)=>{
+const URL="http://wyj.taogou1.cn"
+export const getDate=(url,method,data)=>{
  return axios({
-    url:url,
+    url:URL+url,
     method:method||"get",
     data:data||""
-  }).then(res=>res)
+  }).then(res=> res.data)
 }
- var a= Async_Date('hwxm/jsonp/jsp.json')
 
-const asd=process.env.NODE_ENV==="development"
-console.log(a,asd,process.env,123)

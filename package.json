@@ -2,7 +2,6 @@
   "name": "myapp",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://wyj.taogou1.cn",
   "dependencies": {
     "@babel/core": "7.4.3",
     "@svgr/webpack": "4.1.0",
@@ -52,7 +51,9 @@
     "react-app-polyfill": "^1.0.1",
     "react-dev-utils": "^9.0.1",
     "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
     "react-router-dom": "^5.0.1",
+    "redux": "^4.0.1",
     "resolve": "1.10.0",
     "sass-loader": "^7.1.0",
     "semver": "6.0.0",
@@ -136,6 +137,8 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-import": "^1.12.0"
+    "babel-plugin-import": "^1.12.0",
+    "http-proxy-middleware": "^0.19.1",
+    "mockjs": "^1.0.1-beta3"
   }
 }

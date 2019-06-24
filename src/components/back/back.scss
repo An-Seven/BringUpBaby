@@ -1,0 +1,25 @@
+.back {
+    position: flex;
+    top: 0;
+    z-index: 1001;
+    height: .45rem;
+    position: relative;
+    text-align: center;
+    line-height: .45rem;
+    .back_left{
+       position: absolute;
+       display: inline-block;
+        left: .16rem;
+        width: .24rem;
+        height: .24rem;
+        border-radius: 50%;
+        text-align: center;
+        line-height: .24rem;
+        color: #C5C5C5;
+    }
+    .back_center{
+       display: inline-block;
+       font-size: .18rem;
+       color: #101010
+    } 
+}
