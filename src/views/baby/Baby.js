@@ -1,6 +1,6 @@
-<<<<<<< HEAD
 import React from 'react'
 import './baby.scss'
+import { connect} from 'react-redux'
 class Baby extends React.Component{
   render(){
     return(
@@ -38,31 +38,6 @@ class Baby extends React.Component{
         </div>
       </div>
     )
-=======
-import { connect } from 'react-redux';
-import UI from './UI';
-
-const mapStateToProps = (state) => {
-  console.log(state)
-  return {
-    height: state.heightlist,
-    touxiang: state.touxiang,
-    weight: state.weight,
-    age: state.age,
-    name: state.name
->>>>>>> 3399581851d0650a7e7741ef174df8e0ce652531
   }
 }
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    getBannerList () {
-      fetch('http://www.daxunxun.com/banner').then(res => res.json()).then(data => {
-        dispatch({
-          type: 'changeBannerList',
-          data
-        })
-      })
-    },
-  }
-}
+export default Baby;
