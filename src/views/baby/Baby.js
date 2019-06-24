@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 import './baby.scss'
 class Baby extends React.Component{
@@ -37,6 +38,31 @@ class Baby extends React.Component{
         </div>
       </div>
     )
+=======
+import { connect } from 'react-redux';
+import UI from './UI';
+
+const mapStateToProps = (state) => {
+  console.log(state)
+  return {
+    height: state.heightlist,
+    touxiang: state.touxiang,
+    weight: state.weight,
+    age: state.age,
+    name: state.name
+>>>>>>> 3399581851d0650a7e7741ef174df8e0ce652531
   }
 }
-export default Baby
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getBannerList () {
+      fetch('http://www.daxunxun.com/banner').then(res => res.json()).then(data => {
+        dispatch({
+          type: 'changeBannerList',
+          data
+        })
+      })
+    },
+  }
+}
