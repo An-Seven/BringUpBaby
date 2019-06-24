@@ -8,8 +8,9 @@ import './navbar.scss'
     render(){
         return(
         <div className="navbar">
-            <input type="text" placeholder=" 搜索" />
-            <span>消息</span>
+          <span className="logo">logo</span>
+            <input type="text" placeholder=" 有问题就在这里搜索吧" />
+            <span className="message">签到<i className="fa fa-commenting-o"></i></span>
         </div>
         )
     }
