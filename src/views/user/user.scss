@@ -1,0 +1,54 @@
+@import '@/lib/reset.scss';
+body, html,.root, .App, .container {
+  @include rect(100%, 100%);
+}
+.container {
+  @include flexbox();
+  @include flex-direction(column);
+  .header {
+    @include rect(100%, .45rem);
+    text-align: center;
+    h4{
+      @include rect(100%, .45rem);
+      line-height: .45rem;
+    }
+  }
+  .box {
+    @include flexbox();
+    @include flex-direction(column);
+    @include rect(100%, 100%);
+    background-color: #fff;
+    .photo {
+      @include flexbox();
+      @include justify-content();
+      @include flex-direction(column);
+      @include align-items();
+      padding: .2rem 0;
+      img {
+        margin-bottom: .1rem;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .list {
+    padding: 0 .1rem ;
+    @include rect(100%, 100%);
+    ul{
+      overflow: auto;
+      @include rect(100%, 100%);
+      a{
+        @include flexbox();
+        @include rect(100%, .3rem);
+        border-bottom: 1px solid #ccc;
+        margin: .05rem 0;
+        span{
+          @include flex();
+          font-size: .14rem;
+          line-height: .3rem;
+          padding: 0 0 0 .1rem;
+        }
+      }
+    }
+  }
+}

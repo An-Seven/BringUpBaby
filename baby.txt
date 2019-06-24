@@ -1,0 +1,13 @@
+需要登录页面，建议把社区拿到（我的社区消息没有地方），无法退出登录 订制相册拿掉
+
+1545415
+
+前端项目GIT地址，后端项目GIT地址，服务器地址
+
+前端git地址：https://github.com/wuxunxun007/1902-react.git
+后端git地址：https://github.com/reeylee/baby
+服务器地址：henqy.ddns.net
+
+服务器地址：henqy.ddns.net
+前端git地址：https://github.com/An-Seven/BringUpBaby.git
+后端git地址：https://github.com/reeylee/baby

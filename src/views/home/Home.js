@@ -24,6 +24,7 @@ class Home extends React.Component {
                     <a href=""><img src="http://iph.href.lu/50x50" alt=""/>生活知识</a> 
                 </div>
             {/* 路由下面的卡片 */}
+
             <div className="center">
           
                 <div className="title"> {/* 卡片标题 */}
