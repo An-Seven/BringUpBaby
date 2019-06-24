@@ -1,3 +1,60 @@
-.baby{
-    background-color: #f1f1f1;
+// @import "@/lib/reset.scss";
+.baby {
+  background-color: #f1f1f1;
+  .baby-top {
+    height: 2.08rem;
+    width: 100%;
+    background-color: #999;
+    position: relative;
+    ul {
+      // @include flexbox();
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      li:nth-child(2){
+        text-align: center;
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .baby-inner {
+    height: .6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: white;
+    padding: 0 4%;
+    span {
+      width: .6rem;
+      height: .4rem;
+      background: #F4F2F2;
+      text-align: center;
+      line-height: .4rem;
+    }
+  }
+  .baby-list {
+    padding: 0 4%;
+    background: white;
+    p {
+      span:nth-child(1) {
+        font: .18rem/.3rem "";
+        margin-right: .1rem;
+      }
+      span:nth-child(2) {
+        font: .14rem/.3rem "";
+      }
+    }
+    ul {
+      li {
+        padding: .1rem 4%;
+        background: #f1f1f1;
+        margin-bottom: .04rem;
+      }
+    }
+  }
 }
