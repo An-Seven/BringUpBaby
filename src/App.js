@@ -7,6 +7,13 @@ import Course from "./views/course/Course";
 import Home from "./views/home/Home";
 import User from "./views/user/User";
 import Baby from "./views/baby/Baby";
+import Order from './views/user/order/Order';
+import Collect from './views/user/collect/Collect';
+import Checkins from './views/user/checkins/Checkins';
+import Addbaby from './views/user/addbaby/Addbaby';
+import Advice from './views/user/advice/Advice';
+import Vip from './views/user/vip/Vip';
+import UseCourse from './views/user/course/Course';
 import Community from './views/community/Community'
 function App() {
   return (
@@ -21,6 +28,14 @@ function App() {
           <Route path='/user' component={User}/>
           <Route path='/baby' component={Baby}/>
           <Route path='/community' component={Community}/>
+          <Route path='/order' component= {Order}/>
+          <Route path='/checkins' component= {Checkins}/>
+          <Route path='/collect' component= {Collect}/>
+          <Route path='/addbaby' component= {Addbaby}/>
+          <Route path='/usecourse' component= {UseCourse}/>
+          <Route path='/collect' component= {Collect}/>
+          <Route path='/advice' component= {Advice}/>
+          <Route path='/vip' component= {Vip}/>
           <Route component={Error}/>
         </Switch>
         

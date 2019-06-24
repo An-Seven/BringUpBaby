@@ -16,6 +16,7 @@ class Home extends React.Component {
         return (<div className="home" >
             <Banner />
             {/* 路由下面的卡片 */}
+
             <div className="center">
                 <div className="title"> {/* 卡片标题 */}
                     <h3>免费专区</h3><span> 新鲜有趣的内容</span>
