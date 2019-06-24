@@ -1,12 +1,10 @@
 import React from 'react';
-import axios from 'axios';
+import {Redirect,Route} from 'react-router-dom'
 import './user.scss'
-import {NavLink} from 'react-router-dom'
+import {NavLink,Link} from 'react-router-dom'
 class User extends React.Component {
 	state = {
 		list: []
-	}
-	componentDidMount(){
 	}
 	render() {
 		return (
@@ -23,11 +21,11 @@ class User extends React.Component {
 					</div>
 					<div className="list">
 						<ul>
-							<NavLink to='/addbaby'>
+							<Link to='/users/addbaby'>
 								<i><img src="http://iph.href.lu/30x30"/></i>
 								<span>添加宝宝</span>
 								<s><img src="http://iph.href.lu/30x30"/></s>
-							</NavLink>
+							</Link>
 							<NavLink to='/vip'>
 								<i><img src="http://iph.href.lu/30x30"/></i>
 								<span>会员中心</span>
@@ -48,11 +46,11 @@ class User extends React.Component {
 								<span>我的收藏</span>
 								<s><img src="http://iph.href.lu/30x30"/></s>
 							</NavLink>
-							<NavLink to='/advice'>
+							<Link to='users/advice'>
 								<i><img src="http://iph.href.lu/30x30"/></i>
 								<span>意见反馈</span>
 								<s><img src="http://iph.href.lu/30x30"/></s>
-							</NavLink>
+							</Link>
 							<NavLink to = '/order'>
 								<i><img src="http://iph.href.lu/30x30"/></i>
 								<span>我的订单</span>

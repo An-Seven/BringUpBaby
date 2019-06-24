@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, HashRouter,Route, Switch } from 'react-router-dom'
 import App from '@/layout/App';
+import Users from '@/layout/Users';
 import '@/Rem'
 import '@/main.scss'
 // import '@/api'
@@ -12,13 +13,12 @@ import { Provider } from 'react-redux'
 import '@/mock/index.js'
 ReactDOM.render(
     <Provider store={store}>
-        <BrowserRouter >
+        <HashRouter >
             <Switch> 
-            {/* <Route  path="/detail" component={Detail} /> */}
-                <Route  path="/" component={App} />
-               
+                <Route  path="/users" component={Users} />
+                <Route  path="/" component={App} /> 
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     </Provider>
     , document.getElementById('root'));
 serviceWorker.unregister();

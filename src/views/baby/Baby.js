@@ -1,6 +1,5 @@
 import React from 'react'
 import './baby.scss'
-import { connect} from 'react-redux'
 class Baby extends React.Component{
   render(){
     return(
