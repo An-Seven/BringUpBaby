@@ -16,7 +16,7 @@ class App extends React.Component {
     let { blnav } = this.props
     return (
       <div className="App">
-        {blnav&&<Loding /> }
+        {/* {blnav&&<Loding /> } */}
         {/* <Back/> */}
         <Switch>
           <Route path='/home' component={Home} />
