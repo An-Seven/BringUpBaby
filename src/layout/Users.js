@@ -7,7 +7,7 @@ class Users extends React.Component {
   render() {
     return (
       <div> 
-        {/* <Back data={{bc:"#fff"}}/> */}
+         {/* <Back data={{bc:"#fff"}}/> */}
          <Switch>
           <Route path='/users/addbaby' component={Addbaby} />
           <Route path='/users/advice' component={Advice} />

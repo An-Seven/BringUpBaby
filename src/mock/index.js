@@ -27,7 +27,7 @@ const getCourse=()=>{
 }
 const getHot=()=>{
     var arr=[]
-    for(var i=0;i<2;i++){
+    for(var i=0;i<3;i++){
         arr.push({
             id:"hot"+i,
             img:Mock.Random.image('166x90', Mock.mock('@color'), Mock.mock('@rgb()'), i),

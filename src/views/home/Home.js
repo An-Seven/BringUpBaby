@@ -1,15 +1,16 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import Banner from '@/components/banner/Banner';
 import Navbar from '@/components/navbar/Navbar'
 import './home.scss'
-import { Icon } from 'antd-mobile'
 import { getDate } from '../../api';
 class Home extends React.Component {
     constructor(props) {
         super()
         this.state = {
             course: [],
-            hotlist:[]
+            hotlist:[],
+            title:'wangyaoji'
         }
     }
    async componentWillMount() {
@@ -27,10 +28,12 @@ class Home extends React.Component {
 
             <div className="center">
             <div className="nav">
-                    <a href=""><img src="/icon_img/1.png" alt=""/>早教启蒙</a>
+                    <Link to="/homes/zao"><img src="/icon_img/1.png" alt=""/>早教启蒙</Link>
+                    {/* <Link to={`${this.props.match.url}s/zao/1`}><img src="/icon_img/1.png" alt=""/>早教启蒙</Link> */}
+                    {/* <Link to={{pathname:'/homes/zao',query:{title:"王耀杰"}}}><img src="/icon_img/1.png" alt=""/>早教启蒙</Link> */}
                     <a href=""><img src="/icon_img/2.png" alt=""/>家庭教育</a>
                     <a href=""><img src="/icon_img/1.png" alt=""/>宝宝健康</a>
-                    <a href=""><img src="/icon_img/4.png" alt=""/>生活知识</a> 
+                    <Link to="/homes/eat" href=""><img src="/icon_img/4.png" alt=""/>生活知识</Link> 
                 </div>
                 <div className="title"> {/* 卡片标题 */}
                     <h3>免费专区</h3><span> 新鲜有趣的内容</span>
@@ -53,7 +56,7 @@ class Home extends React.Component {
                    this.state.course.map(item=>{
                        return(
                         <div className="bar2" key={item.id}>
-                        <img src={item.small_img} alt="" />
+                        <img src='/img/teacher.png' alt="" />
                         <div className="bar2_right">
                             <p>{item.title}</p>
                             <span>{item.teacher_name}讲师</span><br />
@@ -95,7 +98,7 @@ class Home extends React.Component {
                                     <p>{item.say}</p>
                                 </div>
                                 <div className="right">
-                                <img src={item.img} alt="" />
+                                <img src="/img/hot.png" alt="" />
                                 </div>
                             </div></div>
                            )
