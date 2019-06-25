@@ -13,7 +13,7 @@ class Banner extends Component {
       }
   render() {
     return (
-      <div className="banner" style={{height:"2rem"}}>
+      <div className="banner" style={{height:"2rem",width:'3.75rem'}}>
          <Carousel
           autoplay
           infinite
@@ -22,12 +22,12 @@ class Banner extends Component {
           {this.state.bannerList.map((val,index) => (
             <a
               key={index}
-              style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
+              style={{ display: 'inline-block', width: '100%', height: "2rem" }}
             >
               <img
                 src={val.imgsrc}
                 alt=""
-                style={{ width: '100%', verticalAlign: 'top',height:'2rem' }}
+                style={{ width: '100%', height:'2rem',background:"url(http://iph.href.lu/375x200) no-repeat"}}
               />
             </a>
           ))}
