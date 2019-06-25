@@ -4,9 +4,6 @@ html, body, #root, .App, .container {
   @include rect(100%, 100%);
   overflow: auto;
 }
-.App{
-  position: relative;
-}
 .container {
   @include flexbox();
   @include flex-direction(column);

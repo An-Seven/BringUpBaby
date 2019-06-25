@@ -3,15 +3,20 @@ import Banner from '@/components/banner/Banner';
 import Navbar from '@/components/navbar/Navbar'
 import './home.scss'
 import { Icon } from 'antd-mobile'
+import { getDate } from '../../api';
 class Home extends React.Component {
     constructor(props) {
         super()
         this.state = {
-            imglist: []
+            course: [],
+            hotlist:[]
         }
     }
-    componentWillMount() {
-
+   async componentWillMount() {
+        this.setState({
+            course:await getDate('/getCourse'),
+            hotlist:await getDate('/getHot')
+        })
     }
     render() {
         return (<div className="home" >
@@ -22,64 +27,50 @@ class Home extends React.Component {
 
             <div className="center">
             <div className="nav">
-                    <a href=""><img src="http://iph.href.lu/50x50" alt=""/>早教启蒙</a>
-                    <a href=""><img src="http://iph.href.lu/50x50" alt=""/>家庭教育</a>
-                    <a href=""><img src="http://iph.href.lu/50x50" alt=""/>宝宝健康</a>
-                    <a href=""><img src="http://iph.href.lu/50x50" alt=""/>生活知识</a> 
+                    <a href=""><img src="/icon_img/1.png" alt=""/>早教启蒙</a>
+                    <a href=""><img src="/icon_img/2.png" alt=""/>家庭教育</a>
+                    <a href=""><img src="/icon_img/1.png" alt=""/>宝宝健康</a>
+                    <a href=""><img src="/icon_img/4.png" alt=""/>生活知识</a> 
                 </div>
                 <div className="title"> {/* 卡片标题 */}
                     <h3>免费专区</h3><span> 新鲜有趣的内容</span>
                 </div>
-                <div className="bar">
-                    <img src="http://iph.href.lu/100x100?text=bar_img" alt="" />
-                    <span>
+                <div className="bar" style={{marginBottom:'.32rem'}}>
+                    <img src="/icon_img/free.png" alt="" />
+                    <span >
                         宝宝如何吃得好，这几件事不要做
                 </span>
                     <div className="icons">
-                        <i className="fa fa-chevron-right fa-2x"></i>
+                        <img src="/icon_img/jian.png" alt=""/>
                     </div>
                 </div>
                 {/* 好课精选 */}
                 <div className="title"> {/* 卡片标题 */}
                     <h3>好课精选</h3><span> 总有一款适合你</span>
                 </div>
-                <div className="bar2">
-                    <img src="http://iph.href.lu/100x100?text=bar_img" alt="" />
-                    <div className="bar2_right">
-                        <p>
-                            每天一小时，如何提升宝贝....
-                </p>
-                        <span>xx讲师</span><br />
-                        <span>89.9元</span>
-                        <span className="last">
-                            免费试听
-                </span>
+
+               {
+                   this.state.course.map(item=>{
+                       return(
+                        <div className="bar2" key={item.id}>
+                        <img src={item.small_img} alt="" />
+                        <div className="bar2_right">
+                            <p>{item.title}</p>
+                            <span>{item.teacher_name}讲师</span><br />
+                            <span>{item.price.price}元</span>
+                            <span className="last">
+                                免费试听
+                    </span>
+                        </div>
                     </div>
-                </div>
-                <div className="bar2">
-                    <img src="http://iph.href.lu/100x100?text=bar_img" alt="" />
-                    <div className="bar2_right">
-                        <p>
-                            每天一小时，如何提升宝贝....
-                </p>
-                        <span>xx讲师</span><br />
-                        <span>89.9元</span>
-                        <span className="last">
-                            免费试听
-                </span>
-                    </div>
-                </div>
+                       )
+                   })
+               }
                 {/* --精彩活动-- */}
-                <div className="title"> {/* 卡片标题 */}
+                <div className="title" style={{marginTop:".4rem"}}> {/* 卡片标题 */}
                     <h3>精彩活动</h3><span> 活动抽奖</span>
                 </div>
                 <div className="active">
-                    <h1>签到积分换会员</h1>
-                    <h2>积分换会员</h2>
-                    <h3>积分换会员</h3>
-                    <div className="icons">
-                        <i className="fa fa-chevron-right fa-2x"></i>
-                    </div>
                 </div>
                 <div className='tab'>
                     <span>积分送课程</span>
@@ -92,20 +83,26 @@ class Home extends React.Component {
                 <div className="hotsay">
                     热门精选
                 </div>
-                <div className="hotsay_bar">
-                    <p>大家来育儿</p>
-                    <div className="bar3">
-                        <div className="left">
-                            <img src="http://iph.href.lu/27x27" alt="" />
-                            <p>铁柱妈妈</p>
-                            <span>啦啦啦，长大了小宝
-宝，来和大家分享..</span>
-                        </div>
-                        <div className="right">
-                        <img src="http://iph.href.lu/166x90?text=bar_img" alt="" />
-                        </div>
-                    </div>
-                </div>
+                   {
+                       this.state.hotlist.map(item=>{
+                           return(
+                            <div className="hotsay_bar" key={item.id}>
+                            <p>{item.title}</p>
+                            <div className="bar3">
+                                <div className="left">
+                                    <img src={item.photo} alt="" />
+                                    <p>{item.name}</p>
+                                    <p>{item.say}</p>
+                                </div>
+                                <div className="right">
+                                <img src={item.img} alt="" />
+                                </div>
+                            </div></div>
+                           )
+                       })
+                   }
+
+                
             </div>
         </div>
         )
