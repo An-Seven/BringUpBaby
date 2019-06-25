@@ -6,8 +6,6 @@ import Error from "@/components/error/Error";
 import Home from "@/views/home/Home";
 import User from "@/views/user/User";
 import Baby from "@/views/baby/Baby";
-import Advice from "@/views/user/advice/Advice";
-import Collect from "@/views/user/collect/Collect";
 import Checkins from "@/views/user/checkins/Checkins";
 import Community from '@/views/community/Community';
 import Loding from '@/components/loding/Loding';
@@ -18,7 +16,7 @@ class App extends React.Component {
     let { blnav } = this.props
     return (
       <div className="App">
-        {/* {blnav&&<Loding /> } */}
+        {blnav&&<Loding /> }
         {/* <Back/> */}
         <Switch>
           <Route path='/home' component={Home} />
@@ -26,10 +24,6 @@ class App extends React.Component {
           <Route path='/user' component={User} />
           <Route path='/baby' component={Baby} />
           <Route path='/community' component={Community} />
-
-          <Route path='/advice' component={Advice}/>
-          <Route path='/collect' component={Collect}/>
-          <Route path='/checkins' component={Checkins}/>
           <Route component={Error} />
         </Switch>
         <Footer className="footer" />

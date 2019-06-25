@@ -1,5 +1,5 @@
 @import '@/lib/reset.scss';
-body, html,.root, .App, .container {
+body, html,.root, .App, .container .UserApp {
   @include rect(100%, 100%);
 }
 .container {

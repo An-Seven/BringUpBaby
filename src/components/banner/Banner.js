@@ -5,7 +5,6 @@ import {Carousel} from 'antd-mobile'
 class Banner extends Component {
     state = {
       bannerList:[1]
-       
       }
 
      async componentDidMount(){
@@ -25,13 +24,8 @@ class Banner extends Component {
           dots
         >
           {this.state.bannerList.map((val,index) => (
-            <a
-              key={index}        
-            >
-              <img
-                src={val.imgsrc}
-                alt=""    
-              />
+            <a key={index}>
+              <img src={val.imgsrc} alt=""/>
             </a>
           ))}
         </Carousel>

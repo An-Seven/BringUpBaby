@@ -17,16 +17,16 @@ class Home extends React.Component {
         return (<div className="home" >
             <Navbar />
             <Banner />
+           
+            {/* 路由下面的卡片 */}
+
+            <div className="center">
             <div className="nav">
                     <a href=""><img src="http://iph.href.lu/50x50" alt=""/>早教启蒙</a>
                     <a href=""><img src="http://iph.href.lu/50x50" alt=""/>家庭教育</a>
                     <a href=""><img src="http://iph.href.lu/50x50" alt=""/>宝宝健康</a>
                     <a href=""><img src="http://iph.href.lu/50x50" alt=""/>生活知识</a> 
                 </div>
-            {/* 路由下面的卡片 */}
-
-            <div className="center">
-          
                 <div className="title"> {/* 卡片标题 */}
                     <h3>免费专区</h3><span> 新鲜有趣的内容</span>
                 </div>

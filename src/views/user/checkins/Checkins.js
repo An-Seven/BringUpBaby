@@ -11,12 +11,12 @@ class Checkins extends React.Component {
 	render() {
     return (
       <div className = "container">
-        <Back data={{bl:"1", title: "签到有礼"}} />
+        <Back data={{bl:"#F479A4", title: "签到有礼"}} />
         <div className="box">
-          <header className="header">
+          <div className="header">
             <div className="integral"></div>
-            <span className="name">查看积分</span>
-          </header>
+            <span className="title">查看积分</span>
+          </div>
         </div>
       </div>
     )
