@@ -6,9 +6,12 @@ import Error from "@/components/error/Error";
 import Home from "@/views/home/Home";
 import User from "@/views/user/User";
 import Baby from "@/views/baby/Baby";
-import Community from '@/views/community/Community'
-import Loding from '@/components/loding/Loding'
-import * as types from '@/store/types'
+import Relatives from "@/views/baby/relatives/Relatives";
+import Invitation from "@/views/baby/relatives/invitation/Invitation";
+import Community from '@/views/community/Community';
+import First_time from '@/views/baby/first_time/First_time';
+import Loding from '@/components/loding/Loding';
+import * as types from '@/store/types';
 import Back from '../components/back/Back';
 class App extends React.Component {
   render() {
@@ -23,6 +26,8 @@ class App extends React.Component {
           <Route path='/user' component={User} />
           <Route path='/baby' component={Baby} />
           <Route path='/community' component={Community} />
+          <Route path='/relatives' component={Relatives} />
+          <Route path='/invitation' component={Invitation} />
           <Route component={Error} />
         </Switch>
         <Footer className="footer" />
