@@ -28,6 +28,7 @@ class App extends React.Component {
           <Route path='/community' component={Community} />
           <Route path='/relatives' component={Relatives} />
           <Route path='/invitation' component={Invitation} />
+          <Route path='/first_time' component={First_time} />
           <Route component={Error} />
         </Switch>
         <Footer className="footer" />

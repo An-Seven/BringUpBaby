@@ -37,7 +37,7 @@ class Baby extends React.Component{
               <span>走路</span>
             </li>
             <li>
-              <span></span>
+              <span>眨眼</span>
             </li>
             <li>
               <span>抬头</span>
@@ -46,24 +46,25 @@ class Baby extends React.Component{
               <span>翻身</span>
             </li>
             <li>
-              <span>自定义</span>
+              <span>走路</span>
             </li>
             <li>
-              <span>抬头</span>
+              <span>吐泡泡</span>
             </li>
             <li>
-              <span>翻身</span>
+              <span>吃饭</span>
             </li>
             <li>
-              <span>自定义</span>
+              <span>叫爸爸</span>
             </li>
             <li>
-              <span>抬头</span>
+              <span>叫妈妈</span>
             </li>
             <li>
-              <span>翻身</span>
+              <span>走路</span>
             </li>
           </ul>
+          <p> ---- 没有了 ---- </p>
         </div>
       </div>
     )
