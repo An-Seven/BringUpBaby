@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './user.scss'
 import {NavLink} from 'react-router-dom'
+// import { Switch, Redirect, Route, NavLink } from 'react-router-dom'
 class User extends React.Component {
 	state = {
 		list: []

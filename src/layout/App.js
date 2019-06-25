@@ -6,9 +6,12 @@ import Error from "@/components/error/Error";
 import Home from "@/views/home/Home";
 import User from "@/views/user/User";
 import Baby from "@/views/baby/Baby";
-import Community from '@/views/community/Community'
-import Loding from '@/components/loding/Loding'
-import * as types from '@/store/types'
+import Advice from "@/views/user/advice/Advice";
+import Collect from "@/views/user/collect/Collect";
+import Checkins from "@/views/user/checkins/Checkins";
+import Community from '@/views/community/Community';
+import Loding from '@/components/loding/Loding';
+import * as types from '@/store/types';
 import Back from '../components/back/Back';
 class App extends React.Component {
   render() {
@@ -23,6 +26,10 @@ class App extends React.Component {
           <Route path='/user' component={User} />
           <Route path='/baby' component={Baby} />
           <Route path='/community' component={Community} />
+
+          <Route path='/advice' component={Advice}/>
+          <Route path='/collect' component={Collect}/>
+          <Route path='/checkins' component={Checkins}/>
           <Route component={Error} />
         </Switch>
         <Footer className="footer" />

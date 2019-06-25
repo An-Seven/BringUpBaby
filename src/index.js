@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import App from '@/layout/App';
+import User from '@/views/user/User'
 import '@/Rem'
 import '@/main.scss'
 // import '@/api'

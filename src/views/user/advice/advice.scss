@@ -3,14 +3,103 @@ body, html,.root, .App, .container {
   @include rect(100%, 100%);
 }
 .container{
+  overflow: auto;
   @include flexbox();
   @include flex-direction(column);
   .header{
-    @include rect(100% , .45rem);
+    position: relative;
+    .send {
+      position: absolute;
+      top:.1rem;
+      right: .1rem;
+      z-index: 2;
+    }
   }
   .box{
+    @include flexbox();
     @include flex();
     overflow: auto;
     background-color:#fff;
+    @include rect(100%, 100%);
+    
+    .txt{
+      margin-top: .1rem;
+      @include rect(100%, 1.5rem);
+      border-top:1px solid #999;
+      border-bottom:1px solid #999;
+      overflow: auto;
+      position: relative;
+      .suggest {
+        display: block;
+        outline: none;
+        @include rect(100%, 100%);
+        border:none;
+        word-wrap: break-word;
+        overflow:scroll;
+        overflow-x:hidden;
+        height:1.5rem;
+        padding: .1rem;
+      }
+      span{
+        position: absolute;
+        bottom: 0;
+        right: .2rem;
+      }
+    }
+    .upload {
+      @include flexbox();
+      @include flex-direction(column);
+      margin-top: .2rem;
+      @include rect(100%, 1.4rem);
+      position: relative;
+      h5{
+        margin-left:.2rem; 
+        @include rect(100%,.16rem);
+      }
+      .add{
+        padding: .15rem 0 0 0;
+        @include flex();
+        @include flexbox();
+        @include rect(100%,100%);
+        li{
+          @include flex();
+          text-align: center;
+          img{
+            @include rect(.8rem,.8rem);
+           
+          }
+        }
+      }
+      span{
+        position: absolute;
+        font-size: .14rem;
+        right: .2rem;
+        bottom: 0;
+      }
+    }
+
+    .concat {
+      
+      @include flex();
+      margin-top: .2rem;
+      @include rect(100%, 100%);
+      h5{
+        margin-left:.2rem; 
+        @include rect(100%,.16rem);
+      }
+      .tel{
+        @include rect(100%, 100%);
+        input {
+          display: block;
+          @include rect(3.3rem , .3rem);
+          margin: .2rem auto;
+          outline: none;
+        }
+      }
+      .text {
+        @include rect(3.3rem , auto);
+        margin: .2rem auto;
+      }
+    }
   }
 }

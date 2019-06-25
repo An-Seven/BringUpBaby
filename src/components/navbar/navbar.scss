@@ -1,40 +1,50 @@
+$color:#ff5b61;
 .navbar {
   height: .45rem;
+  padding:0 .15rem;
   text-align: center;
+  box-sizing: border-box;
   line-height: .45rem;
   font-size: .25rem;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-  padding:.07rem 0 0 .2rem;
-  background-color: #f8f8f8;
+  background-color:$color;
+  input::-webkit-input-placeholder{
+    color:rgba(255,255,255,.5);
+}
   input {
+    margin-top:.105rem;
     outline: none;
-    width: 2.65rem;
-    height: .3rem;
-    border-radius: .06rem;
-    color: rgba(136, 136, 136, 1);
-    font-size: .14rem;
-    text-align: left;
+    width: 2.47rem;
+    height: .24rem;
+    border-radius: .12rem;
+    color:#fff;
+    font-size: .1rem;
+    text-align: center;
     font-family: Microsoft Yahei;
-    border: 1px solid rgba(187, 187, 187, 1);
+    border: 1px solid rgba(255,255,255,.3);
     float: left;
     padding-left: 2px;
-   
+   background-color:rgba(255,255,255,.3);
   }
-
-  span {
+.logo{
+  width: 0.44rem;float: left; height: .45rem;
+ 
+}
+  .message{
     float: left;
-    margin-left: .15rem;
     width: .54rem;
-    height: .3rem;
-    line-height: .3rem;
-    border-radius: .06rem;
-    color: rgba(16, 16, 16, 1);
-    font-size: .14rem;
-    text-align: center;
-    font-family: Arial;
-    border: 1px solid rgba(187, 187, 187, 1);
+    height: .45rem;
+    line-height: .45rem;
+    color: #fefefe;
+    font-size: .11rem;
+   i{
+     display: inline-block;
+     margin:.1rem 0 0 .05rem;
+     display: inline;
+     font-size: .20rem;
+   }
   }
 }

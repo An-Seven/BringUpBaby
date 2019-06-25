@@ -1,0 +1,18 @@
+@import '@/lib/reset.scss';
+body, html,.root, .App, .container {
+  @include rect(100%, 100%);
+}
+.container {
+  @include flexbox();
+  @include flex-direction(column);
+  ul{
+    @include rect(100%, 100%);
+    li{
+      @include rect(3.3rem, .4rem);
+      background-color: #F2F2F3;
+      text-align: center;
+      line-height: .4rem;
+      margin: .2rem auto ;
+    }
+  }
+}

@@ -1,19 +1,24 @@
 import React, { Component } from 'react'
+import './banner.scss'
 import {getDate} from '@/api'
 import {Carousel} from 'antd-mobile'
 class Banner extends Component {
     state = {
-      bannerList:[]
+      bannerList:[1]
        
       }
+
      async componentDidMount(){
+       
        this.setState({
          bannerList:await getDate('/getBanner')
        })
+      
       }
+
   render() {
     return (
-      <div className="banner" style={{height:"2rem"}}>
+      <div className="banner" >
          <Carousel
           autoplay
           infinite
@@ -21,13 +26,11 @@ class Banner extends Component {
         >
           {this.state.bannerList.map((val,index) => (
             <a
-              key={index}
-              style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
+              key={index}        
             >
               <img
                 src={val.imgsrc}
-                alt=""
-                style={{ width: '100%', verticalAlign: 'top',height:'2rem' }}
+                alt=""    
               />
             </a>
           ))}

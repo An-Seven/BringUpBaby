@@ -1,0 +1,20 @@
+@import '@/lib/reset.scss';
+body, html,.root, .App, .container {
+  @include rect(100%, 100%);
+}
+.container {
+  @include flexbox();
+  @include flex-direction(column);
+  .box {
+    @include flexbox();
+    @include flex-direction(column);
+    .header {
+      @include flexbox();
+      @include flex-direction(column);
+      @include align-items();
+      .integral{
+        @include rect(1rem, 1rem);
+      }
+    }
+  }
+}
