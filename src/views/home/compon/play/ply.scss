@@ -1,0 +1,17 @@
+.my-radio .am-radio {
+    padding: 2.5px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  span.am-radio-inner{
+      width: 0.2rem;height: 0.2rem;border: 1px #F2F2F2 solid;border-radius: 50%;
+  }
+  .am-radio-checked .am-radio-inner{
+    width: 0.2rem;height: 0.2rem;border: 1px #F2F2F2 solid;border-radius: 50%;background-color: #F677A4;
+}
+.am-radio.am-radio-checked span.am-radio-inner:after{
+   border-color: #fff;
+   margin-top:.04rem;
+}
+  

@@ -2,16 +2,22 @@ import React from 'react';
 import { Switch, Route} from 'react-router-dom'
 import Zao from '../views/home/zao/Zao';
 import Eat from '../views/home/eat/Eat';
-import Noeat from '../views/home/compon/Noeat';
+import Noeat from '../views/home/compon/noeat/Noeat';
+import Detail from '../views/home/compon/detail/Detail';
+import Chat from '../views/home/compon/chat/Chat';
+import Play from '../views/home/compon//play/Ply'
 class Homes extends React.Component {
   render() {
     return (
       <div> 
-     
+        
          <Switch>
           <Route path='/homes/zao' component={Zao} />
           <Route path='/homes/eat' component={Eat} />
           <Route path='/homes/noeat' component={Noeat} />
+          <Route path='/homes/detail' component={Detail} />
+          <Route path='/homes/chat' component={Chat} />
+          <Route path='/homes/play' component={Play} />
         </Switch>
       </div> 
       

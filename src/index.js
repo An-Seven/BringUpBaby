@@ -4,6 +4,7 @@ import { BrowserRouter, HashRouter,Route, Switch } from 'react-router-dom'
 import App from '@/layout/App';
 import Users from '@/layout/Users';
 import Homes from '@/layout/Homes';
+import Babys from '@/layout/Babys';
 import '@/Rem'
 import '@/main.scss'
 // import '@/api'
@@ -18,6 +19,7 @@ ReactDOM.render(
             <Switch> 
                 <Route  path="/homes" component={Homes} />
                 <Route  path="/users" component={Users} />
+                <Route  path="/babys" component={Babys} />
                 <Route  path="/" component={App} /> 
             </Switch>
         </HashRouter>

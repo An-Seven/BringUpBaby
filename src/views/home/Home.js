@@ -56,7 +56,7 @@ class Home extends React.Component {
                {
                    this.state.course.map(item=>{
                        return(
-                        <div className="bar2" key={item.id}>
+                        <div onClick={()=>{this.props.history.push('/homes/detail')}} className="bar2" key={item.id}>
                         <img src='/img/teacher.png' alt="" />
                         <div className="bar2_right">
                             <p>{item.title}</p>

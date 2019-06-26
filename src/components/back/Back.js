@@ -10,7 +10,7 @@ const Back = (props) => {
         <div className="back_box">
         <div className='back' onClick={() => {
             window.history.go(-1)
-        }} style={{ background:bc ? bc : '' }}>
+        }} style={{ background:bc}}>
             <span className="back_left"><i className='fa fa-angle-left'></i></span>
             {title && <span className="back_center" style={{ color:color }}>{title}</span>}
         </div>
