@@ -1,15 +1,17 @@
 import React from 'react';
-import axios from 'axios';
 import './addbaby.scss'
+import Back from '../../../components/back/Back';
 class Addbaby extends React.Component {
 	state = {
 		list: []
   }
   componentDidMount(){
 	}
-	render() {
-    return (
-      <div>dfsdafdfasdfasdf</div>
+	render() {return (
+    
+      <div>
+        <Back data={{bc:1,title:"123"}}/>
+        </div>
     )
   }
 }
