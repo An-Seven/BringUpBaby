@@ -1,16 +1,122 @@
 @import '@/lib/reset.scss';
-body, html,.root, .App, .container {
+body, html,.root, .App, .container .UserApp {
   @include rect(100%, 100%);
 }
 .container{
+  overflow: auto;
   @include flexbox();
   @include flex-direction(column);
   .header{
-    @include rect(100% , .45rem);
+    position: relative;
+    .back {
+      .back_left{
+        @include text-color(#fff);
+      }
+      .back_center{
+        @include text-color(#fff);
+      }
+    }
+    .send {
+      position: absolute;
+      top:.1rem;
+      right: .1rem;
+      z-index: 2;
+      font-size: .18rem;
+      @include text-color(#fff);
+    }
   }
   .box{
+    @include flexbox();
     @include flex();
     overflow: auto;
     background-color:#fff;
+    @include rect(100%, 100%);
+    
+    .txt{
+      margin-top: .1rem;
+      width:100%;
+      border-top:1px solid #999;
+      border-bottom:1px solid #999;
+      position: relative;
+      .suggest {
+        display: block;
+        outline: none;
+        @include rect(100%, 100%);
+        border:none;
+        word-wrap: break-word;
+        overflow:scroll;
+        overflow-x:hidden;
+        height:1.5rem;
+        padding: .1rem;
+      }
+      span{
+        position: absolute;
+        bottom: 0;
+        right: .2rem;
+      }
+    }
+    .upload {
+      @include flex-direction(column);
+      margin-top: .2rem;
+      @include rect(100%, 1.4rem);
+      position: relative;
+      h5{
+        margin-left:.2rem; 
+        @include rect(100%,.16rem);
+      }
+      .add{
+        padding: .15rem 0 0 0;
+        @include flex();
+        @include flexbox();
+        @include rect(100%,100%);
+        li{
+          @include flex();
+          text-align: center;
+          @include background-color(#fff);
+          margin: 0 auto;
+          img{
+            @include rect(.8rem,.8rem);
+           
+          }
+        }
+      }
+      span{
+        position: absolute;
+        font-size: .14rem;
+        right: .2rem;
+        bottom: 0;
+      }
+    }
+
+    .concat {
+      
+      @include flex();
+      margin-top: .2rem;
+      @include rect(100%, 100%);
+      h5{
+        margin-left:.2rem; 
+        @include rect(100%,.16rem);
+      }
+      .tel{
+        @include rect(100%, 100%);
+        .number{
+          @include rect(3.3rem , .3rem);   
+          border: 1px solid #ccc;
+          overflow: hidden;
+          margin: .2rem auto;
+          input {
+            display: block;
+            @include rect(3.3rem , .3rem);            
+            outline: none;
+            border: none;
+            padding-left: .1rem;
+          }
+        }
+      }
+      .text {
+        @include rect(3.3rem , auto);
+        margin: .2rem auto;
+      }
+    }
   }
 }

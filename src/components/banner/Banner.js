@@ -4,16 +4,20 @@ import {getDate} from '@/api'
 import {Carousel} from 'antd-mobile'
 class Banner extends Component {
     state = {
-      bannerList:[1,2,3]  
+      bannerList:[1]
       }
+
      async componentDidMount(){
+       
        this.setState({
          bannerList:await getDate('/getBanner')
        })
+      
       }
+
   render() {
     return (
-     <div className="banner" >
+      <div className="banner" >
          <Carousel
           autoplay
           infinite

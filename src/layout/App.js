@@ -6,9 +6,10 @@ import Error from "@/components/error/Error";
 import Home from "@/views/home/Home";
 import User from "@/views/user/User";
 import Baby from "@/views/baby/Baby";
-import Community from '@/views/community/Community'
-import Loding from '@/components/loding/Loding'
-import * as types from '@/store/types'
+import Checkins from "@/views/user/checkins/Checkins";
+import Community from '@/views/community/Community';
+import Loding from '@/components/loding/Loding';
+import * as types from '@/store/types';
 import Back from '../components/back/Back';
 class App extends React.Component {
   render() {
