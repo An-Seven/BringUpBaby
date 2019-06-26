@@ -4,6 +4,7 @@ html, body, #root, .App, .container {
   @include rect(100%, 100%);
   overflow: auto;
 }
+$color2:#F479A4;
 .container {
   @include flexbox();
   @include flex-direction(column);

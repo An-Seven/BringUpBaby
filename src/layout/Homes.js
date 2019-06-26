@@ -6,6 +6,8 @@ import Noeat from '../views/home/compon/noeat/Noeat';
 import Detail from '../views/home/compon/detail/Detail';
 import Chat from '../views/home/compon/chat/Chat';
 import Play from '../views/home/compon//play/Ply'
+import Trysee from '../views/home/compon/trysee/Trysee'
+import Grain from '../views/home/compon/grain/Grain';
 class Homes extends React.Component {
   render() {
     return (
@@ -15,7 +17,9 @@ class Homes extends React.Component {
           <Route path='/homes/zao' component={Zao} />
           <Route path='/homes/eat' component={Eat} />
           <Route path='/homes/noeat' component={Noeat} />
+          <Route path='/homes/grain' component={Grain} />
           <Route path='/homes/detail' component={Detail} />
+          <Route path='/homes/trysee' component={Trysee} />
           <Route path='/homes/chat' component={Chat} />
           <Route path='/homes/play' component={Play} />
         </Switch>

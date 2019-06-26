@@ -6,6 +6,7 @@ const getBanner=function(){
     arr.push({
       id:"banner"+i,
       imgsrc:Mock.Random.image('200x100', Mock.mock('@color'), Mock.mock('@rgb()'), i)
+     
     })
   }
   return arr
