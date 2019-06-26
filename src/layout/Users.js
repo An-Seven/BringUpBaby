@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route,Link} from 'react-router-dom'
+import { Switch, Route} from 'react-router-dom'
 import Addbaby from '@/views/user/addbaby/Addbaby';
 import Advice from '@/views/user/advice/Advice';
 import Collect from '@/views/user/collect/Collect';
@@ -9,13 +9,8 @@ import Back from '../components/back/Back';
 class Users extends React.Component {
   render() {
     return (
-<<<<<<< HEAD
-      <div> 
-         {/* <Back data={{bc:"#fff"}}/> */}
-=======
       <div className="UserApp">
         {/* <Back data={{bc:"#fff"}}/> */}
->>>>>>> d2a409424d9d770147f3efe504bf56fc9d773612
          <Switch>
           <Route path='/users/info' component={Info} />
           <Route path='/users/addbaby' component={Addbaby} />

@@ -1,5 +1,7 @@
 import React from 'react'
 import './baby.scss'
+import Babylist from '@/components/babylist/Babylist';
+import { connect} from 'react-redux'
 class Baby extends React.Component{
   render(){
     return(
@@ -25,14 +27,15 @@ class Baby extends React.Component{
         <div className="baby-list">
           <p><span>今天</span><span>第1天</span></p>
           <ul>
-            <li>今天宝宝出生了，长得很漂亮，虽然没有睁眼，但是肯定很大</li>
+            {/* <li>今天宝宝出生了，长得很漂亮，虽然没有睁眼，但是肯定很大</li>
             <li>身高80cm,体重5kg</li>
             <li>宝宝长得很漂亮宝宝长得很漂亮宝宝长得很漂亮宝宝长得很漂亮</li>
             <li>今天宝宝出生了，长得很漂亮，虽然没宝长得很漂亮宝宝长得很漂亮宝宝长得很漂</li>
             <li>今天宝宝出生了，长得很漂亮，虽然没有睁眼，但是肯定很大</li>
             <li>身高80cm,体重5kg</li>
             <li>宝宝长得很漂亮宝宝长得很漂亮宝宝长得很漂亮宝宝长得很漂亮</li>
-            <li>今天宝宝出生了，长得很漂亮，虽然没宝长得很漂亮宝宝长得很漂亮宝宝长得很漂</li>
+            <li>今天宝宝出生了，长得很漂亮，虽然没宝长得很漂亮宝宝长得很漂亮宝宝长得很漂</li> */}
+            <Babylist />
           </ul>
         </div>
       </div>

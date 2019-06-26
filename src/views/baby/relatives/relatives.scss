@@ -1,0 +1,61 @@
+.relatives {
+  .header {
+    width: 100%;
+    height: .44rem;
+    background: #ccc;
+    text-align: center;
+    font: .16rem/.44rem "";
+  }
+  .member{
+    background: #F4F2F2;
+    height: 1.64rem;
+    padding: 0 .4rem;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      li {
+        img {
+          border-radius: 50%;
+        }
+        p {
+          font: .12rem/.36rem "";
+          text-align: center;
+        }
+      }
+    }
+  }
+  .member_list {
+    width: 100%;
+    background: #F4F2F2;
+    margin-top: .16rem;
+    p {
+      padding-left: .2rem;
+      padding-top: .16rem;
+    }
+    ul {
+      display: flex;
+      padding: .2rem .2rem;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%;
+      li {
+        width: 25%;
+        text-align: center;
+        img {
+          border-radius: 50%;
+        }
+      }
+      li:nth-child(5),
+      li:nth-child(6),
+      li:nth-child(7),
+      li:nth-child(8) {
+        margin-top: .15rem;
+      }
+    }
+  }
+}

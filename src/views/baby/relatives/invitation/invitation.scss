@@ -1,0 +1,33 @@
+.invitation {
+  .header {
+    width: 100%;
+    height: .44rem;
+    background: #ccc;
+    text-align: center;
+    font: .16rem/.44rem "";
+  }
+  .invitation_card {
+    width: 2.9rem;
+    height: 1.73rem;
+    background: #ccc;
+    border-radius: .04rem;
+    margin: .3rem auto;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    padding: 0 .5rem;
+  }
+  .btn {
+    margin: .2rem auto;
+    width: 2rem;
+    button {
+      width: 2rem;
+      height: .5rem;
+      border: 1px solid #ccc;
+      background: rgb(255, 255, 255);
+      border-radius: .05rem;
+      margin-top: .14rem;
+    }
+  }
+}
