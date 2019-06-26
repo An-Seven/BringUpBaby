@@ -20,10 +20,14 @@
         line-height: .24rem;
         color: #fff;
         font-size: .4rem;
+        .fa-angle-left {
+            font-size: .3rem;
+            line-height:.45rem;
+        }
     }
     .back_center{
        display: inline-block;
        font-size: .17rem;
-       color: #101010
+       color: #fff
     } 
 }
