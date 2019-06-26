@@ -1,8 +1,11 @@
-.back {
-    position: flex;
+.back_box{
+    position: fixed;
     top: 0;
-    z-index: 1001;
+    z-index: 1001;  
+}
+.back {
     height: .45rem;
+    width: 3.75rem;
     position: relative;
     text-align: center;
     line-height: .45rem;
@@ -15,11 +18,12 @@
         border-radius: 50%;
         text-align: center;
         line-height: .24rem;
-        color: #C5C5C5;
+        color: #fff;
+        font-size: .4rem;
     }
     .back_center{
        display: inline-block;
-       font-size: .18rem;
+       font-size: .17rem;
        color: #101010
     } 
 }

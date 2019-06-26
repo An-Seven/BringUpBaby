@@ -34,6 +34,7 @@ class Home extends React.Component {
                     <a href=""><img src="/icon_img/2.png" alt=""/>家庭教育</a>
                     <a href=""><img src="/icon_img/1.png" alt=""/>宝宝健康</a>
                     <Link to="/homes/eat" href=""><img src="/icon_img/4.png" alt=""/>生活知识</Link> 
+                    {/* <Link to={{pathname:"/homes/eat",state:{title:'王耀杰'}}} href=""><img src="/icon_img/4.png" alt=""/>生活知识</Link>  */}
                 </div>
                 <div className="title"> {/* 卡片标题 */}
                     <h3>免费专区</h3><span> 新鲜有趣的内容</span>
