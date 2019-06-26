@@ -15,46 +15,58 @@ class User extends React.Component {
 				<div className="box">
 					<div className="info">
 						<div className="photo">
-							<img src="http://iph.href.lu/56x56"></img>
+							<Link to='/users/info'>
+							<img src="/icon_img/headicon.png"></img>
+							</Link>
 							<p>小宝妈妈</p>
 						</div>
 					</div>
 					<div className="list">
 						<ul>
 							<Link to='/users/addbaby'>
-								<i><img src="http://iph.href.lu/30x30"/></i>
+								<i className="circle"><img src="/icon_img/u-1.png"/></i>
 								<span>添加宝宝</span>
-								<s><img src="http://iph.href.lu/30x30"/></s>
+								<s><img src="/icon_img/u-j.png"/></s>
 							</Link>
 							<Link to='/users/vip'>
-								<i><img src="http://iph.href.lu/30x30"/></i>
+								<i><img src="/icon_img/u-2.png"/></i>
 								<span>会员中心</span>
-								<s><img src="http://iph.href.lu/30x30"/></s>
+								<s><img src="/icon_img/u-j.png"/></s>
 							</Link>
 							<Link to='/users/checkins'>
-								<i><img src="http://iph.href.lu/30x30"/></i>
+								<i><img src="/icon_img/u-3.png"/></i>
 								<span>我的签到</span>
-								<s><img src="http://iph.href.lu/30x30"/></s>
+								<s><img src="/icon_img/u-j.png"/></s>
 							</Link>
 							<Link to='/users/course'>
-								<i><img src="http://iph.href.lu/30x30"/></i>
+								<i><img src="/icon_img/u-4.png"/></i>
 								<span>我的课程</span>
-								<s><img src="http://iph.href.lu/30x30"/></s>
+								<s><img src="/icon_img/u-j.png"/></s>
 							</Link>
 							<Link to='/users/collect'>
-								<i><img src="http://iph.href.lu/30x30"/></i>
+								<i><img src="/icon_img/u-5.png"/></i>
 								<span>我的收藏</span>
-								<s><img src="http://iph.href.lu/30x30"/></s>
+								<s><img src="/icon_img/u-j.png"/></s>
+							</Link>
+							<Link to='/users/album'>
+								<i><img src="/icon_img/u-6.png"/></i>
+								<span>相册定制</span>
+								<s><img src="/icon_img/u-j.png"/></s>
 							</Link>
 							<Link to='/users/advice'>
-								<i><img src="http://iph.href.lu/30x30"/></i>
+								<i><img src="/icon_img/u-7.png"/></i>
 								<span>意见反馈</span>
-								<s><img src="http://iph.href.lu/30x30"/></s>
+								<s><img src="/icon_img/u-j.png"/></s>
+							</Link>
+							<Link to = '/users/set'>
+								<i><img src="/icon_img/u-8.png"/></i>
+								<span>通用设置</span>
+								<s><img src="/icon_img/u-j.png"/></s>
 							</Link>
 							<Link to = '/users/order'>
-								<i><img src="http://iph.href.lu/30x30"/></i>
+								<i><img src="/icon_img/u-9.png"/></i>
 								<span>我的订单</span>
-								<s><img src="http://iph.href.lu/30x30"/></s>
+								<s><img src="/icon_img/u-j.png"/></s>
 							</Link>
 						</ul>
 					</div>
@@ -64,4 +76,4 @@ class User extends React.Component {
 		)
 	}
 }
-export default User
+export default User;

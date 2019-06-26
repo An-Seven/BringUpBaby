@@ -64,6 +64,8 @@ body, html,.root, .App, .container .UserApp {
         li{
           @include flex();
           text-align: center;
+          @include background-color(#fff);
+          margin: 0 auto;
           img{
             @include rect(.8rem,.8rem);
            

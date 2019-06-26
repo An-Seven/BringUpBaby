@@ -25,7 +25,7 @@ class Advice extends Component {
             <h5>上传图片</h5>
             <ul className="add">
               <li><img src="http://iph.href.lu/80x80"></img></li>
-              <li><img src="http://iph.href.lu/80x80"></img></li>
+              <li> <img src="http://iph.href.lu/80x80"></img></li>
               <li><img src="http://iph.href.lu/80x80"></img></li>
             </ul>
             <span>可上传三张</span>
