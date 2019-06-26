@@ -13,10 +13,11 @@ class Info extends React.Component {
         <div className="box">
           <ul className="name">
             <li>
-              <span className="tou"></span>
+              <span>头像</span>
+              <i className="tou"></i>
             </li>
             <li>
-              <span>姓名</span>
+              <span>名字</span>
               <s className="jian"></s>
             </li>
           </ul>

@@ -2,3 +2,21 @@
 body, html,.root, .App, .container,.UserApp {
   @include rect(100%, 100%);
 }
+.container {
+  @include flexbox();
+  .back {
+    
+  }
+  .box {
+    @include flex();
+    .name {
+      li {
+        margin:0 auto;
+
+        span {
+          margin-left: .1rem;
+        }
+      }
+    }
+  }
+}

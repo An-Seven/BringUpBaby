@@ -34,7 +34,9 @@ class Advice extends Component {
           <div className="concat">
             <h5>联系方式</h5>
             <div className="tel">
+              <div className="number">
               <input type="text" placeholder="电话/微信"/>
+              </div>
               <div className="text">
                 我们将认真的阅读您的意见，并尽早回复，咨询更多问题，可拨打客服电话：410-555-6666感谢您的支持！
               </div>
