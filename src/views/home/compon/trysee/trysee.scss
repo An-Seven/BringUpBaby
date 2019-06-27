@@ -1,0 +1,67 @@
+$color:#F391B3;
+
+.trysee {
+    padding-bottom: .3rem;
+
+    .trysee_banner {
+        height: 1.83rem;
+        width: 3.75rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    h2 {
+        margin: .12rem 0;
+        text-align: center;
+        font-size: .13rem;
+        font-family: 400;
+    }
+
+    p {
+        width: 3.75rem;
+        display: inline-block;
+        height: .21rem;
+        line-height: .21rem;
+        text-align: center;
+        background: $color;
+        font-size: .11rem;
+        color: #Fff;
+    }
+
+    .trysee_list {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            width: 100%;
+            height: 0.46rem;
+            margin-top: .13rem;
+             background-color: #fff;
+            padding:9px 15px;
+            img{
+                width: 0.28rem;height: 0.28rem;float: left;
+            }
+            .trysee_list_right{
+                height: .28rem;line-height: .28rem;
+                display: flex;
+                float: right;
+                width: 3.1rem;
+                color:#333333;
+                justify-content: space-between;
+                span{
+                    flex: 1;
+                    font-size: .11rem;
+                }
+                span:nth-of-type(3){
+                text-align: right;
+                }
+                span:nth-of-type(2){
+               font-size: .14rem;
+                }
+            }
+        }
+    }
+}

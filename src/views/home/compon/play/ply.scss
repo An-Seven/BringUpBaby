@@ -1,8 +1,9 @@
+$color:#F479A4;
 .my-radio .am-radio {
-    padding: 2.5px;
-    border: 1px solid #ccc;
+    padding: .025rem;
+    // border: 1px solid #ccc;
     border-radius: 50%;
-    margin-right: 5px;
+    margin-right: .05rem;
   }
   span.am-radio-inner{
       width: 0.2rem;height: 0.2rem;border: 1px #F2F2F2 solid;border-radius: 50%;
@@ -10,8 +11,72 @@
   .am-radio-checked .am-radio-inner{
     width: 0.2rem;height: 0.2rem;border: 1px #F2F2F2 solid;border-radius: 50%;background-color: #F677A4;
 }
+.am-radio.am-radio-checked {
+  position: relative;
+}
+.am-list .am-list-item.am-radio-item .am-list-line .am-list-extra span.am-radio-inner{
+  top:.12rem;
+}
 .am-radio.am-radio-checked span.am-radio-inner:after{
    border-color: #fff;
-   margin-top:.04rem;
+  //  margin-top:.04rem; 
+   position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin:auto;
 }
-  
+.ply{
+  .money{
+    height: 1.42rem;width: 3.75rem;background-color: #fff;margin-top: .45rem;
+    padding-top:.18rem;
+  p{
+    text-align: center;
+  }
+  p:nth-of-type(1){
+    font-size: .13rem;
+    color:#333;
+  }
+  p:nth-of-type(2){
+    font-size: .4rem;
+    color:#333;
+    margin:0 0 .08rem 0;
+  }
+  p:nth-of-type(3){
+    font-size: .1rem;
+    -webkit-transform:scale(0.8);
+    color:#333;
+    span{
+      i{
+        padding-left: .05rem;
+      }
+    }
+  }
+  }
+  .am-list-item .am-list-line .am-list-content {
+    padding-left: .49rem;
+  }
+  .am-list-body{
+    .am-list-item:nth-of-type(1) .am-list-content{
+      background:url(/icon_img/zhi.png) no-repeat left;
+      background-size: .35rem;
+    }
+    .am-list-item:nth-of-type(2) .am-list-content{
+      background:url(/icon_img/wei.png) no-repeat left;
+      background-size: .35rem;
+    }
+    .am-list-item:nth-of-type(3) .am-list-content{
+      background:url(/icon_img/yin.png) no-repeat left;
+      background-size: .35rem;
+    }
+  }
+
+.am-list{
+  margin-top:.35rem;
+}
+.last_play{
+  text-align: center;background-color:$color;
+  width: 3.43rem;height: 0.4rem;line-height: .4rem;
+  position: fixed;
+  bottom:.15rem;
+  left: .16rem;
+  font-size: .17rem;
+  color:#fff;
+}
+}

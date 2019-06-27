@@ -26,7 +26,7 @@ class Detail extends Component {
           </div>
           <div className="detail_footer">
             <Link to='/homes/chat' href="">咨询</Link>
-            <a href="">试看</a>
+            <Link to="/homes/trysee">试看</Link>
             <Link to="/homes/play">立即购买<span>99.9</span>元</Link>
           </div>
       </div>
