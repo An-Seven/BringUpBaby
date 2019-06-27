@@ -1,16 +1,18 @@
 import React from 'react'
 import './baby.scss'
+import { NavLink,Link } from 'react-router-dom';
 import Babylist from '@/components/babylist/Babylist';
-import { connect} from 'react-redux'
+import { connect } from 'react-redux'
 class Baby extends React.Component{
   render(){
     return(
       <div className="baby">
         <div className="baby-top">
+          <img src="/icon_img/b-bg.png" alt=""/>
           <ul>
             <li>身高</li>
             <li>
-              <img src="https://iph.href.lu/69x69" alt=""/>
+              <img src="/icon_img/b-tx.png" alt=""/>
               <p>名字</p>
               {/* <i className="fa fa-spinner fa-pulse"></i> */}
               <p>年龄</p>
@@ -19,10 +21,14 @@ class Baby extends React.Component{
           </ul>
         </div>
         <div className="baby-inner">
-          <span>第一次</span>
-          <span>成长记录</span>
-          <span>相册</span>
-          <span>亲友团</span>
+          <Link to='/babys/photos'>
+            <img src="/icon_img/b-p.png" alt=""/>
+            相册
+          </Link>
+          <Link to='/babys/relatives'>
+            <img src="/icon_img/b-rl.png" alt=""/>
+            亲友团
+          </Link>
         </div>
         <div className="baby-list">
           <p><span>今天</span><span>第1天</span></p>

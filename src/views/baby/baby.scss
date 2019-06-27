@@ -6,8 +6,14 @@
     width: 100%;
     background-color: #999;
     position: relative;
+    img {
+      width: 100%;
+      height: 2.08rem;
+    }
     ul {
       // @include flexbox();
+      position: absolute;
+      top: 0;
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -16,25 +22,31 @@
       li:nth-child(2){
         text-align: center;
         img {
-          border-radius: 50%;
+          height: .70rem;
+          width: .70rem;
+          border-radius: .35rem;
         }
       }
     }
   }
   .baby-inner {
+    margin-top: .3rem;
     height: .6rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     background: white;
-    padding: 0 4%;
-    span {
-      width: .6rem;
-      height: .4rem;
-      background: #F4F2F2;
+    padding: 0 8%;
+    a {
       text-align: center;
       line-height: .4rem;
+      color: #333;
+      img {
+        display: block;
+        width: .35rem;
+        height: 100%;
+      }
     }
   }
   .baby-list {
