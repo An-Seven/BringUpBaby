@@ -6,7 +6,7 @@ class Eat extends Component {
   render() {
     return ( 
       <div className='eat'>
-        <Back data={{bc:'#F479A4',title:'生活知识'}}/>
+        <Back data={{bc:'#F479A4',title:'生活知识',color:"#fff"}}/>
         <div className="eat_nav">
           <Link to='/homes/noeat'><img src="/icon_img/eat_01.png" alt=""/><span>能不能吃</span></Link>
           <a ><img src="/icon_img/eat_01.png" alt=""/><span>能不能吃</span></a>

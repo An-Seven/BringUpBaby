@@ -8,11 +8,11 @@ import Chat from '../views/home/compon/chat/Chat';
 import Play from '../views/home/compon//play/Ply'
 import Trysee from '../views/home/compon/trysee/Trysee'
 import Grain from '../views/home/compon/grain/Grain';
+import Graindetail from '../views/home/compon/graindetail/Graindetail';
 class Homes extends React.Component {
   render() {
     return (
       <div> 
-        
          <Switch>
           <Route path='/homes/zao' component={Zao} />
           <Route path='/homes/eat' component={Eat} />
@@ -22,6 +22,7 @@ class Homes extends React.Component {
           <Route path='/homes/trysee' component={Trysee} />
           <Route path='/homes/chat' component={Chat} />
           <Route path='/homes/play' component={Play} />
+          <Route path='/homes/graindetail/:id' component={Graindetail} />
         </Switch>
       </div> 
       
