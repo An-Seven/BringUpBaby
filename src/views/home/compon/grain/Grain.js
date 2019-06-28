@@ -19,7 +19,7 @@ this.setState({
   data:await getDate('/getEat')
 })
   }
-  /* 0不能吃  1能吃   2少吃 */
+  /* 0不能吃  1能吃   2少吃 3慎吃*/
   render() {
     return (
     <div className='grain'>
@@ -36,7 +36,7 @@ this.setState({
           </div>
           <div className="grain_l">
             {
-              item.type.map((ite,ind)=>{
+              item.dat.map((ite,ind)=>{
                 return(
                   <span key={ind}><img src={`/icon_img/grain_${ite.value}.png` }alt=""/>{ite.name}</span>
                 )

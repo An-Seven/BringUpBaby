@@ -1,0 +1,23 @@
+
+
+
+.b1{
+    background:url('/img/lead/1.jpg') no-repeat center;
+    transition: all 5s;
+}
+.b2{
+    background:url('/img/lead/2.jpg') no-repeat center;
+    transition: all 5s;
+}
+.b0{
+    background:url('/img/lead/0.jpg') no-repeat center;
+    transition: all 5s;
+}
+.lead{
+    position: absolute;
+    z-index: 10000;
+    width: 3.75rem;
+    height: 6.67rem;
+    background-size: 3.75rem 6.67rem;
+   
+}

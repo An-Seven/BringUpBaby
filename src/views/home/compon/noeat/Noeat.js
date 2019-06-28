@@ -2,7 +2,16 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import Back from '@/components/back/Back';
 import './noeat.scss'
+import {getDate} from '@/api'
 class Noeat extends Component {
+  state={
+    list:[]
+  }
+  async componentDidMount(){
+      this.setState({
+        list:await getDate('/getNoeat')
+      })
+  }
   render() {
     return (
       <div className="noeat">
@@ -13,10 +22,14 @@ class Noeat extends Component {
              </div>
           </div>
              <div className="noeat_box">
-                  <Link to="/homes/grain"><img src="/icon_img/noeat.png" alt=""/><span>五谷杂粮</span></Link>
-                  <a><img src="/icon_img/noeat.png" alt=""/><span>五谷杂粮</span></a>
-                  <a><img src="/icon_img/noeat.png" alt=""/><span>五谷杂粮</span></a>
-                  <a><img src="/icon_img/noeat.png" alt=""/><span>五谷杂粮</span></a>
+                 {
+                   this.state.list.map(item=>{
+                     return(
+                      <Link to="/homes/grain" key={item.id}><img src={item.img} alt=""/><span>{item.title}</span></Link>
+                     )
+                   })
+                 }
+
              </div>
       </div>
     )
