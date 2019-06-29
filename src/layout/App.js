@@ -6,8 +6,9 @@ import Error from "@/components/error/Error";
 import Home from "@/views/home/Home";
 import User from "@/views/user/User";
 import Baby from "@/views/baby/Baby";
+import Community from "@/views/wechat/Wechat"
 // import Community from '@/views/community/Community';
-import Community from "@/views/login/Login"
+// import Community from "@/views/login/Login"
 import Loding from '@/components/loding/Loding';
 import * as types from '@/store/types';
 class App extends React.Component {

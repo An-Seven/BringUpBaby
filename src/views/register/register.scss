@@ -1,0 +1,91 @@
+@import '@/lib/reset.scss';
+html, baby, #root, .App, .register{
+  @include rect(100%, 100%);
+}
+.register{
+  .header {
+    @include rect(100%, .44rem);
+  }
+  .content {
+    @include rect(100%, 100%);
+    padding:.37rem .32rem  0 .37rem;
+    h2{
+      margin-bottom: 0.43rem;
+      font-size: .21rem;
+    }
+    .tel{
+      @include rect(100%, .65rem);
+      overflow: hidden;
+      border-bottom: 1px solid #E6E6E6;
+      input{
+        border: none;
+        @include rect(100%, .65rem);
+        line-height: .65rem;
+        font-size: .16rem;
+        color: #CCCCCC;
+      }
+    }
+    .code{
+      @include rect(100%, .65rem);
+      overflow: hidden;
+      border-bottom: 1px solid #E6E6E6;
+      @include flexbox();
+      @include align-items();
+      input{
+        border: none;
+        @include flex();
+        height: .65rem;
+        padding-right: .2rem;
+      }
+      button{
+        @include rect(.86rem,.35rem);
+        background: #F479A4;
+        border: none;
+        color: #fff;
+      }
+    }
+    .link{
+      margin: .28rem 0 .43rem 0;
+      color: #F479A4;
+      font-size: .16rem;
+    }
+    .enter{
+      background-color: #FDE9F0;
+      height: .42rem;
+      color: #F479A4;
+      font-size: .16rem;
+      text-align: center;
+      line-height: .42rem;
+      margin-bottom: .23rem;
+    }
+    .zhuce{
+      background-color: #F479A4;
+      font-size: .16rem;
+      text-align: center;
+      line-height: .42rem;
+      height: .42rem;
+      color: #fff;
+      margin-bottom: .38rem;
+    }
+    .logo{
+      text-align: center;
+      margin-bottom: .37rem;
+      img{
+        @include rect(.42rem, .7rem);
+      }
+    }
+    p{
+      margin: 0 auto;
+      color:#CCCCCC;
+      font-size: .14rem;
+      span{
+        color: #F479A4;
+        text-decoration: underline;
+      }
+      s{
+        color: #F479A4;
+        text-decoration: underline;
+      }
+    }
+  }
+}
