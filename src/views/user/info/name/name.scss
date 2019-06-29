@@ -8,12 +8,29 @@ body, html,.root, .App, .updatename, .UserApp {
   @include flex-direction(column);
   .header {
    @include rect(100%, .45rem);
-   .content{
-    label {
-      .setname{
-        @include rect(2.25rem, .25rem);
+  }
+  .content{
+    @include rect(100%,100%);
+    .setname{
+      text-align: center;
+      margin: .2rem auto;
+      width: 2.25rem;
+      .text{
+        border: 1px solid #ccc;
+        @include rect(2.25rem, .3rem);
+        overflow: hidden;
+        margin-bottom: .15rem;
+        input{
+          @include rect(2.25rem, .25rem);
+          padding-left:.05rem ;
+          border:none;
+          outline: none;
+        }
+      }
+      p{
+        font-size: .12rem;
+        color: #999;
       }
     }
-   }
   }
 }

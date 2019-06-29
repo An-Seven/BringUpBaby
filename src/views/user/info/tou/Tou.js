@@ -12,6 +12,11 @@ class Tou extends React.Component {
         <Back data={{bc:"#F479A4", title: "设置头像"}} />
         <div className="header"></div>
         <div className="content">
+          <ul>
+            <li>
+              <img></img>
+            </li>
+          </ul>
         </div>
           
       </div>

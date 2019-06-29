@@ -8,6 +8,7 @@ import Info from '@/views/user/info/Info';
 import District from '@/views/user/info/district/District';
 import Name from '@/views/user/info/name/Name';
 import Tou from '@/views/user/info/tou/Tou';
+import Babyinfo from '@/views/user/addbaby/babyinfo/Babyinfo'
 import Back from '../components/back/Back';
 class Users extends React.Component {
   render() {
@@ -20,9 +21,10 @@ class Users extends React.Component {
           <Route path='/users/advice' component={Advice} />
           <Route path='/users/collect' component={Collect} />
           <Route path='/users/checkins' component={Checkins} />
-          <Route path='/users/district' component={District} />
+          <Route path='/users/district' component={District} /> 
           <Route path='/users/name' component={Name} />
           <Route path='/users/tou' component={Tou} />
+          <Route path='/users/babyinfo' component={Babyinfo}/>
         </Switch>
       </div>
     )

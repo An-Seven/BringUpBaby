@@ -1,9 +1,10 @@
-import React from 'react';
-import axios from 'axios';
 import { Picker, List, WhiteSpace } from 'antd-mobile';
 import { createForm } from 'rc-form';
 import arrayTreeFilter from 'array-tree-filter';
+import  React from 'react'
 import { district, provinceLite } from 'antd-mobile-demo-data';
+
+// 如果不是使用 List.Item 作为 children
 const CustomChildren = props => (
   <div
     onClick={props.onClick}
@@ -15,6 +16,7 @@ const CustomChildren = props => (
     </div>
   </div>
 );
+
 const seasons = [
   [
     {
@@ -224,11 +226,13 @@ class Test extends React.Component {
           cols={1}
           onChange={this.onChangeColor}
         >
+          <List.Item arrow="horizontal">Complex Labels</List.Item>
         </Picker>
       </List>
     </div>);
   }
 }
 
-const TestWrapper = createForm()(Test);
-export default TestWrapper;
+const Text = createForm()(Test);
+
+export default Text
