@@ -1,20 +1,87 @@
 @import '@/lib/reset.scss';
-body, html,.root, .App, .container,.UserApp {
+body, html,.root, .App, .information, .UserApp {
   @include rect(100%, 100%);
+  background-color: #fff;
 }
-.container {
+.information {
   @include flexbox();
-  .back {
-    
+  @include flex-direction(column);
+  .header {
+   @include rect(100%, .45rem);
   }
-  .box {
+  .content {
     @include flex();
+    @include rect(100%, 100%);
     .name {
-      li {
-        margin:0 auto;
+      width: 100%;
+      margin: .15rem 0 ;
+      a {
+        display: block;
+        @include rect(3.32rem, .44rem);
+        background-color: #F2F2F3;
+        border-radius: .06rem;
+        margin: 0 auto;
+        overflow: hidden;
+        span{
+          float: left;
+          line-height: .44rem;
+          padding-left:.08rem;
+          color: #999999; 
+        }
+        i {
+          float: right;
+          @include rect(.4rem, .4rem);
+          border-radius: 50%;
+          img{
+            @include rect(.4rem, .4rem);
+          }
+        }
+        .jian{
+          float: right;
+          @include rect(.4rem, .4rem);
+          display: block;
+          text-align: center;
+          line-height: .4rem;
+          img{
+            @include rect(.11rem, .19rem);
+          }
+        }
+      }
+    }
 
-        span {
-          margin-left: .1rem;
+    .profile {
+      a ,li {
+        display: block;
+        @include rect(3.32rem, .44rem);
+        background-color: #F2F2F3;
+        border-radius: .06rem;
+        margin: 0 auto;
+        span{
+          line-height: .44rem;
+          padding-left:.08rem;
+          color: #999999;
+        }
+        i{
+          display: block;
+          float: right;
+          @include rect(.12rem, .44rem);
+          border: .01rem solid #ccc;
+          border-radius: 0 .06rem .06rem 0;
+          line-height: .44rem;
+          img {
+            @include rect(.1rem, .06rem);
+           
+          }
+        }
+        s{
+          float: right;
+          @include rect(.4rem, .4rem);
+          display: block;
+          text-align: center;
+          line-height: .4rem;
+          img{
+            @include rect(.11rem, .19rem);
+          }
         }
       }
     }

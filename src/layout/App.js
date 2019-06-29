@@ -7,6 +7,8 @@ import Home from "@/views/home/Home";
 import User from "@/views/user/User";
 import Baby from "@/views/baby/Baby";
 import Community from '@/views/community/Community';
+import Community from "@/views/login/Login"
+import Loding from '@/components/loding/Loding';
 import * as types from '@/store/types';
 class App extends React.Component {
   render() {
@@ -16,10 +18,10 @@ class App extends React.Component {
         <Switch>
           <Route path='/home' component={Home} />
           <Redirect exact path="/" to="/home" />
-          <Redirect exact path="/" to="/lead" />
           <Route path='/user' component={User} />
           <Route path='/baby' component={Baby} />
           <Route path='/community' component={Community} />
+          {/* <Route path='/login' component={Login} /> */}
           <Route component={Error} />
         </Switch>
         <Footer className="footer" />

@@ -1,4 +1,47 @@
 @import '@/lib/reset.scss';
-body, html,.root, .App, .container .UserApp {
+body, html,.root, .App{
   @include rect(100%, 100%);
+}
+.addbaby {
+  @include rect(100%, 100%);
+  .header{
+    @include rect(100%, .45rem);
+  }
+  .content{
+    @include rect(100%, 100%);
+    background-color: #fff;
+    overflow:hidden;
+    p {
+      margin:.32rem 0;
+      text-align: center;
+      font-size: .14rem;
+    }
+    .choose{
+      @include flexbox();
+      @include rect(100%, 100%);
+      padding: 0 .68rem;
+      a {
+        display: block;
+        @include flex();
+        text-align: center;
+        span{
+          display: block;
+          @include rect(.6rem, .6rem);
+          border-radius: 50%;
+          font-size: .14rem;
+          color:#fff;
+          line-height: .6rem;
+          &.blue{
+            background-color: #758EFA;
+          }
+          &.pink{
+            background-color: #FA9BBC;
+          }
+          &.yellow{
+            background-color: #FAC553;
+          }
+        }
+      }
+    }
+  }
 }
