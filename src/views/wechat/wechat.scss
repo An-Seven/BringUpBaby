@@ -14,11 +14,76 @@ html, baby, #root, .App, .wechat{
       p{
         font-size: .16rem;
         font-weight: 600;
+        margin-bottom: .15rem;
+        img{
+          @include rect(.3rem,.3rem);
+          margin-right: .08rem;
+        }
       }
       h3{
         font-size: .21rem;
         font-weight: 800;
       }
+   }
+   .info {
+     h6{
+       padding-bottom: .13rem;
+       border-bottom:1px solid #CCCCCC;
+       color:#ccc;
+     }
+     .default {
+       position: relative;
+       height: .7rem;
+       @include flexbox();
+       @include align-items();
+       border-bottom:1px solid #CCCCCC;
+       img{
+         @include rect(.5rem, .5rem);
+         margin-right: .12rem;
+       }
+       .name{
+         h3{
+           font-size: .16rem;
+           color: #333333;
+         }
+         p{
+           font-size: .14rem;
+           color:#CCCCCC;
+         }
+       }
+       .checked{ 
+         position: absolute;
+         right: 0;
+         img{
+           @include rect(.15rem, .12rem);
+         }
+        }
+     }
+     .other{
+       @include flexbox;
+       @include align-items();
+       position: relative;
+       border-bottom:1px solid #CCCCCC;
+       margin-bottom: .73rem;
+       .add{
+         @include rect(.5rem,.5rem);
+         text-align: center;
+         line-height: .5rem;
+         img{
+           @include rect(.18rem, .18rem);
+         }
+       }
+       h3{
+         font-size: .16rem;
+         height: .6rem;
+         line-height: .6rem;
+       }
+       img.right{
+         @include rect(.06rem, .11rem);
+         position: absolute;
+         right: 0;
+       }
+     }
    }
   }
 } 

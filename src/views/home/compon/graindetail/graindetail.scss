@@ -1,0 +1,45 @@
+.graindetail{
+    background-color: #fff;
+    >img{
+        height: 2.24rem;width: 3.75rem;
+        margin-top: .45rem;
+    }
+    .detail_name{
+        width: 100%;height: .55rem;
+        position: sticky;top: .45rem;
+        margin:.3rem .2rem 0.2rem;
+        background-color: #fff;
+        z-index: 1;
+        >h2{
+            font-size: .18rem;
+            color: #1A1A1A
+        }
+        >p{
+            font-size:.13rem;
+            color:#BEBCBC;
+            margin-top:.05rem;
+        }
+    }
+    .detail_list{
+        padding:0 .2rem;
+        h2{
+            height: .64rem;
+            line-height: .64rem;
+            font-size: .17rem;
+            position: relative;
+            span{
+                 font-weight: 400;
+                  position: absolute;
+                  left: .69rem;
+                img{
+                    width: 0.19rem;height: 0.19rem;margin: -.03rem .07rem 0 0;
+                  
+                }
+            }
+        }
+        .content{
+            color: #333;
+            font-size: .15rem;
+        }
+    }
+}

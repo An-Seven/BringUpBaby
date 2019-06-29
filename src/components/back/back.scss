@@ -13,17 +13,14 @@
        position: absolute;
        display: inline-block;
         left: .16rem;
+        top:.05rem;
         width: .24rem;
         height: .24rem;
         border-radius: 50%;
         text-align: center;
         line-height: .24rem;
         color: #fff;
-        font-size: .4rem;
-        .fa-angle-left {
-            font-size: .3rem;
-            line-height:.45rem;
-        }
+        font-size: .3rem;
     }
     .back_center{
        display: inline-block;
