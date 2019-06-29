@@ -1,5 +1,5 @@
 .xiangce {
-  margin-top: .45rem;
+  margin-top: .55rem;
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -7,22 +7,38 @@
     align-items: center;
     width: 100%;
     li:nth-child(1) {
-      background: #ccc;
-      width: 1.5rem;
-      height: 1.5rem;
+      width: 50%;
+      text-align: center;
+      padding-bottom: .62rem;
+      div {
+        width: 1.5rem;
+        height: 1.5rem;
+        background: #ccc;
+        margin: 0 auto;
+        span {
+          font: .16rem/1.5rem "";
+          text-align: center;
+          margin-left: 0;
+        }
+      }
     }
     li {
       width: 50%;
-      padding: .35rem .14rem;
-      .xinjian {
-        text-align: center;
-      }
+      text-align: center;
+      padding: .1rem 0;
       img {
         width: 1.5rem;
         height: 1.5rem;
       }
       span {
         display: block;
+        text-align: left;
+        margin-left: 8%;
+        font: .16rem/.3rem "";
+        color: #666;
+      }
+      span:nth-child(3) {
+        font: .14rem/.22rem "";
       }
     }
   }

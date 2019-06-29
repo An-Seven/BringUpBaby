@@ -1,13 +1,12 @@
 import React from 'react';
 import './invitation.scss';
+import Back from '@/components/back/Back';
 // import { connect } from './node_modules/react-redux';
 class Invitation extends React.Component{
   render(){
     return(
       <div className="invitation">
-        <header className="header">
-          <h4>亲友团</h4>
-        </header>
+        <Back data={{bc:'#F479A4',title: '邀请'}}/>
         <div className="invitation_card">
           <p>ADSWER</p>
         </div>

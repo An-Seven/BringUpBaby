@@ -21,20 +21,32 @@ const getBabylist = function(){
   }
   return arr
 }
+// const getPhotoList = function(){
+//   let arr = []
+//   for (var i=0;i<8;i++){
+//     arr.push({
+//       id: 'photo' +i,
+//       photo: 
+//       title: Mock.mock('@title(3, 5)'),
+//       num: 
+//     })
+//   }
+//   return arr
+// }
 const getCourse=()=>{
-    var arr=[]
-    for(var i=0;i<2;i++){
-        arr.push({
-            id:"course"+i,
-            small_img:Mock.Random.image('100x100', Mock.mock('@color'), Mock.mock('@rgb()'), i),
-            title:Mock.Random.csentence( 10,20 ),
-            teacher_name:Mock.mock('@cfirst')+Mock.mock('@cname()'),
-            price:Mock.mock({
-                "price|1-100": 100
-              })
-        })
-    }
-    return arr
+  var arr=[]
+  for(var i=0;i<2;i++){
+    arr.push({
+      id:"course"+i,
+      small_img:Mock.Random.image('100x100', Mock.mock('@color'), Mock.mock('@rgb()'), i),
+      title:Mock.Random.csentence( 10,20 ),
+      teacher_name:Mock.mock('@cfirst')+Mock.mock('@cname()'),
+      price:Mock.mock({
+        "price|1-100": 100
+      })
+    })
+  }
+  return arr
 }
 const getHot=()=>{
     var arr=[]

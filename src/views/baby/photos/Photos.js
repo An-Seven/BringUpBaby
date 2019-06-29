@@ -11,7 +11,9 @@ class Photos extends React.Component{
         <div className="xiangce">
           <ul>
             <li>
-              <span className="xinjian">新建相册</span>
+              <div>
+                <span className="xinjian">新建相册</span>
+              </div>
             </li>
             <li>
               <img src="http://iph.href.lu/150x130" alt="" />
