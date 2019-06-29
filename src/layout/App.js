@@ -12,9 +12,10 @@ import Loding from '@/components/loding/Loding';
 import * as types from '@/store/types';
 class App extends React.Component {
   render() {
-    let { blnav } = this.props
+    let { blLoding } = this.props
     return (
       <div className="App">
+       {blLoding&&<Loding/>}
         <Switch>
           <Route path='/home' component={Home} />
           <Redirect exact path="/" to="/home" />
@@ -45,11 +46,11 @@ class App extends React.Component {
 
 let a = (state) => {
   return ({
-    blnav: state.blnav
+    blLoding: state.blLoding
   })
 }
 let b = (dispath) => ({
-  viewnav: (bl) => dispath({ type: types.VIEW_NAV, data: bl })
+ /*  viewnav: (bl) => dispath({ type: types.VIEW_NAV, data: bl }) */
 })
 const Capp = connect(a, b)(App)
 

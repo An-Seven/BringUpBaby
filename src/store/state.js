@@ -1,5 +1,6 @@
 const state={
     bannerlist:[],
-    blnav:false
+    blLoding:false,
+   
 }
 export default state
