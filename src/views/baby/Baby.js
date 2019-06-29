@@ -10,24 +10,24 @@ class Baby extends React.Component{
         <div className="baby-top">
           <img src="/icon_img/b-bg.png" alt=""/>
           <ul>
-            <li>身高</li>
+            {/* <li>身高</li> */}
             <li>
               <img src="/icon_img/b-tx.png" alt=""/>
-              <p>名字</p>
+              <p>小宝宝</p>
               {/* <i className="fa fa-spinner fa-pulse"></i> */}
-              <p>年龄</p>
+              <p>小宝宝出生啦</p>
             </li>
-            <li>体重</li>
+            {/* <li>体重</li> */}
           </ul>
         </div>
         <div className="baby-inner">
           <Link to='/babys/photos'>
             <img src="/icon_img/b-p.png" alt=""/>
-            相册
+            <span>相册</span>
           </Link>
           <Link to='/babys/relatives'>
             <img src="/icon_img/b-rl.png" alt=""/>
-            亲友团
+            <span>亲友团</span>
           </Link>
         </div>
         <div className="baby-list">

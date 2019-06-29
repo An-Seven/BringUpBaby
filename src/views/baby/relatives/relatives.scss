@@ -1,15 +1,9 @@
 .relatives {
-  .header {
-    width: 100%;
-    height: .44rem;
-    background: #ccc;
-    text-align: center;
-    font: .16rem/.44rem "";
-  }
   .member{
     background: #F4F2F2;
     height: 1.64rem;
     padding: 0 .4rem;
+    margin-top: .45rem;
     ul {
       display: flex;
       justify-content: space-around;
@@ -19,6 +13,8 @@
       li {
         img {
           border-radius: 50%;
+          width: .69rem;
+          height: .69rem;
         }
         p {
           font: .12rem/.36rem "";
@@ -31,7 +27,7 @@
     width: 100%;
     background: #F4F2F2;
     margin-top: .16rem;
-    p {
+    .biaoti {
       padding-left: .2rem;
       padding-top: .16rem;
     }
@@ -43,18 +39,49 @@
       flex-wrap: wrap;
       width: 100%;
       height: 100%;
-      li {
-        width: 25%;
+      a {
         text-align: center;
-        img {
+        p {
+          width: .6rem;
+          height: .6rem;
+          background: #ccc;
+          text-align: center;
           border-radius: 50%;
+          font: .12rem/.6rem "";
+          color: #fff;
         }
       }
-      li:nth-child(5),
-      li:nth-child(6),
-      li:nth-child(7),
-      li:nth-child(8) {
-        margin-top: .15rem;
+    }
+  }
+  .fenxiang_list {
+    width: 100%;
+    background: #F4F2F2;
+    margin-top: .16rem;
+    .biaoti {
+      padding-left: .2rem;
+      padding-top: .16rem;
+    }
+    ul {
+      display: flex;
+      padding: .3rem .8rem;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%;
+      li {
+        .wechartimg {
+          width: .32rem;
+          height: 100%;
+        }
+        .qqimg {
+          width: .27rem;
+          height: 100%;
+        }
+        .sinaimg {
+          width: .37rem;
+          height: 100%;
+        }
       }
     }
   }

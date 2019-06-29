@@ -10,9 +10,9 @@ import '@/main.scss'
 import '@/api'
 import 'antd-mobile/dist/antd-mobile.css';
 import * as serviceWorker from './serviceWorker';
-import store from './store/store'
-import { Provider } from 'react-redux'
-import '@/mock/index.js'
+import store from './store/store';
+import { Provider } from 'react-redux';
+import '@/mock/index.js';
 ReactDOM.render(
     <Provider store={store}>
         <HashRouter >
