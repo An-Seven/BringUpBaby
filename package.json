@@ -137,6 +137,7 @@
     ]
   },
   "devDependencies": {
+    "antd-mobile": "^2.2.14",
     "antd-mobile-demo-data": "^0.2.0",
     "array-tree-filter": "^2.1.0",
     "babel-plugin-import": "^1.12.0",
