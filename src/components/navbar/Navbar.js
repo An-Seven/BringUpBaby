@@ -5,11 +5,17 @@ import './navbar.scss'
     render(){
         return(
         <div className="navbar">
-          <span className="logo">LOGO</span>
+          <span className="logo">
+            <img src="/icon_img/logo.png" alt=""/>
+          </span>
             <input type="text" placeholder=" 有问题就在这里搜索吧" />
-            <span className="message" onClick={()=>{  
-              console.log("签到成功")
-            }}>签到<i className="fa fa-commenting-o"></i></span>
+            <span className="message" onClick={(e)=>{  
+             e.stopPropagation(); 
+             console.log("签到成功")
+            }}>签到<i className="fa fa-commenting-o" onClick={(e)=>{ 
+              e.stopPropagation(); //阻止事件冒泡
+              console.log("消息")
+            }}></i></span>
         </div>
         )
     }

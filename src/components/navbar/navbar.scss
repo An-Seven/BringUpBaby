@@ -32,7 +32,10 @@ $color:#F479A4;
 .logo{
   width: 0.44rem;float: left; height: .45rem;
   font-size: .12rem;color:#fff;line-height: .5rem;
- 
+ img{
+   width: .30rem;height: .30rem;display: block;
+   margin:.08rem .05rem 0 0;
+ }
 }
   .message{
     float: left;

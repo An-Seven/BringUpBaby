@@ -1,0 +1,66 @@
+@import '@/lib/reset.scss';
+html, body, root, UseApp, .babyinfo {
+  @include rect(100%, 100%);
+}
+.babyinfo {
+  overflow: auto;
+  .header {
+    @include rect(100%,.45rem);
+    position: relative;
+    .next{
+      position: absolute;
+      font-size: .17rem;
+      right: .1rem;
+      @include text-color(#fff);
+      z-index: 1001;
+      display: block;
+      height: .45rem;
+      line-height: .45rem;
+    }
+  }
+  .content {
+    @include rect(100%, 100%);
+    overflow: hidden;
+    .settou{
+      margin-top: .28rem;
+      text-align: center;
+      margin-bottom: .49rem;
+      img{
+        @include rect(.6rem, .6rem);
+      }
+      p{
+        font-size: .12rem;
+        margin-top:.1rem;
+        color: #999;
+      }
+    }
+    .info{
+      padding:0 .16rem;
+      p{
+        height: .3rem;
+        margin-bottom: .1rem;
+        span{
+          font-size: .14rem;
+          color:#999;
+          float: left;
+          line-height: .3rem;
+
+        }
+        i{
+          border: 1px solid #999;
+          overflow: hidden;
+          display: block;
+          float: right;
+          border-radius: .1rem;
+          @include rect(3rem, .3rem);
+          input{
+            @include rect(3rem, .3rem);
+            padding-left: .1rem;
+            outline:none;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

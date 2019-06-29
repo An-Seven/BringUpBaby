@@ -1,0 +1,45 @@
+.grain {
+    padding-top: 1.05rem;
+    background-color: #fff;
+
+    .grain_card {
+        margin: 0 .2rem;
+        height: 1.43rem;
+        border-bottom: 1px #E6E6E6 solid;
+        padding-top: .22rem;
+
+        h2 {
+            font-size: .17rem;
+            color: #1A1A1A;
+            margin-bottom: .06rem;
+        }
+
+        .grain_r {
+            img {
+                width: 0.71rem;
+                height: 0.71rem;
+                float: right;
+            }
+        }
+
+        .grain_l {
+            width: 2.2rem;
+            float: left;
+            height: 0.6rem;
+            padding-top: .09rem;
+            display: flex; flex-wrap: wrap;
+            span {
+                display: block;
+                width: 1.1rem;
+                color: #333333;
+                margin-bottom: .1rem;
+                img {
+                    width: 0.17rem;
+                    height: 0.17rem;
+                    margin-right: .09rem;
+                    margin-top: -.04rem;
+                }
+            }
+        }
+    }
+}

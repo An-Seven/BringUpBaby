@@ -11,7 +11,9 @@ class Collect extends React.Component {
 	render() {
     return (
       <div className = "container">
-        <Back data={{bl:"1", title: "我的收藏"}} />
+        
+        <Back data={{bc:"#F479A4", title: "我的收藏"}} />
+        <div className="header"></div>
         <div className="box">
           <ul>
             <li>育儿知识</li>
