@@ -2,7 +2,7 @@ import React from 'react';
 import Back from '@/components/back/Back';
 import { NavLink,Link } from 'react-router-dom';
 import './relatives.scss';
-// import { connect } from './node_modules/react-redux';
+import { connect } from 'react-redux'
 class Relatives extends React.Component{
   render(){
     return(
@@ -25,22 +25,22 @@ class Relatives extends React.Component{
             你还可以邀请
           </p>
           <ul>
-            <Link to='/babys/relatives/invitation'>
+            <Link to='/babys/invitation'>
               <p>
                 爷爷
               </p>
             </Link>
-            <Link to='/babys/relatives/invitation'>
+            <Link to='/babys/invitation'>
               <p>
                 奶奶
               </p>
             </Link>
-            <Link to='/babys/relatives/invitation'>
+            <Link to='/babys/invitation'>
               <p>
                 姥姥
               </p>
             </Link>
-            <Link to='//babys/relatives/invitation'>
+            <Link to='/babys/invitation'>
               <p>
                 姥爷
               </p>

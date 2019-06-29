@@ -16,7 +16,7 @@ class Babys extends React.Component {
           {/* <Route path='/babys/first_time' component={First_time} /> */}
           <Route path='/babys/photos' component={Photos} />
           <Route path='/babys/relatives' component={Relatives} />
-          <Route path='/babys/relatives/invitation' component={Invitation} />
+          <Route path='/babys/invitation' component={Invitation} />
         </Switch>
       </div>
       
