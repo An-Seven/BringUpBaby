@@ -7,26 +7,19 @@ import Home from "@/views/home/Home";
 import User from "@/views/user/User";
 import Baby from "@/views/baby/Baby";
 import Community from '@/views/community/Community';
-import Loding from '@/components/loding/Loding';
 import * as types from '@/store/types';
-import Back from '../components/back/Back';
-import Lead from '../views/lead/Lead';
 class App extends React.Component {
   render() {
     let { blnav } = this.props
     return (
       <div className="App">
-        {/* {blnav&&<Loding /> } */}
-        {/* <Back/> */}
-        
         <Switch>
           <Route path='/home' component={Home} />
-          {/* <Redirect exact path="/" to="/home" /> */}
+          <Redirect exact path="/" to="/home" />
           <Redirect exact path="/" to="/lead" />
           <Route path='/user' component={User} />
           <Route path='/baby' component={Baby} />
           <Route path='/community' component={Community} />
-          <Route path='/lead' component={Lead} />
           <Route component={Error} />
         </Switch>
         <Footer className="footer" />
