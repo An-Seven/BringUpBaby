@@ -1,0 +1,29 @@
+.xiangce {
+  margin-top: .45rem;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    li:nth-child(1) {
+      background: #ccc;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    li {
+      width: 50%;
+      padding: .35rem .14rem;
+      .xinjian {
+        text-align: center;
+      }
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+      span {
+        display: block;
+      }
+    }
+  }
+}
