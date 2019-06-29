@@ -33,10 +33,10 @@ class App extends React.Component {
   componentWillReceiveProps(nextProps) {
     let path = nextProps.location.pathname;
     if (/home/.test(path)) {
-      this.props.viewnav(true);
+      // this.props.viewnav(true);
     }
     if (/baby|user|course|community/.test(path)) {
-      this.props.viewnav(false);
+      // this.props.viewnav(false);
     }
   }
   /* -------------------- */
