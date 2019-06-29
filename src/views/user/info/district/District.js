@@ -1,9 +1,8 @@
 import React from 'react';
-import axios from 'axios';
 import { Picker, List, WhiteSpace } from 'antd-mobile';
 import { createForm } from 'rc-form';
 import arrayTreeFilter from 'array-tree-filter';
-import { district, provinceLite } from 'antd-mobile-demo-data';
+ import { district, provinceLite } from 'antd-mobile-demo-data';
 const CustomChildren = props => (
   <div
     onClick={props.onClick}
