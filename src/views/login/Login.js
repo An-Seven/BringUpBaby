@@ -23,13 +23,19 @@ class Login extends React.Component {
               <span className="shortcut">短信快捷登录</span>
               <span className="forget">忘记密码</span>
             </div>
-            <div className="enter">登录</div>
-            <div className="register">注册</div>
+            <div className="enter" onClick={this.login.bind(this)}>登录</div>
+            <div className="register" onClick={this.toReg.bind(this)}>注册</div>
             <div className="logo"><img src="/icon_img/login-logo.png"></img></div>
             <p>登录即表示同意<span>寓见用户服务协议</span>及<s>隐私政策</s></p>
         </div>
       </div>
     )
+  }
+  toReg(){
+    this.props.history.push('/login/register')
+  }
+  login(){
+    this.props.history.push('/home')
   }
 }
 export default Login;

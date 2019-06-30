@@ -5,14 +5,14 @@ const getBanner=function(){
   for(var i=0;i<3;i++){
     arr.push({
       id:"banner"+i,
-      imgsrc:Mock.Random.image('200x100', Mock.mock('@color'), Mock.mock('@rgb()'), i)   
+      imgsrc:'/img/banner/banner_01.png'
     })
   }
   return arr
 }
 const getBabylist = function(){
   let arr = []
-  for (var i=0;i<12;i++){
+  for (var i=0;i<5;i++){
     arr.push({
       id: 'pro' +i,
       paragraph: Mock.mock('@paragraph')
@@ -76,7 +76,7 @@ const getNoeat=()=>{
     }
     return arr
 }
-console.log(getNoeat())
+
 const getEat=()=>{
     var data=[]
     for(var i=1;i<7;i++){

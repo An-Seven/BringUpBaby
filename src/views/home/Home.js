@@ -29,12 +29,9 @@ class Home extends React.Component {
             <div className="center">
             <div className="nav">
                     <Link to="/homes/zao"><img src="/icon_img/1.png" alt=""/>早教启蒙</Link>
-                    {/* <Link to={`${this.props.match.url}s/zao/1`}><img src="/icon_img/1.png" alt=""/>早教启蒙</Link> */}
-                    {/* <Link to={{pathname:'/homes/zao',query:{title:"王耀杰"}}}><img src="/icon_img/1.png" alt=""/>早教启蒙</Link> */}
                     <a href=""><img src="/icon_img/2.png" alt=""/>家庭教育</a>
-                    <a href=""><img src="/icon_img/1.png" alt=""/>宝宝健康</a>
+                    <a href=""><img src="/icon_img/3.png" alt=""/>宝宝健康</a>
                     <Link to="/homes/eat" href=""><img src="/icon_img/4.png" alt=""/>生活知识</Link> 
-                    {/* <Link to={{pathname:"/homes/eat",state:{title:'王耀杰'}}} href=""><img src="/icon_img/4.png" alt=""/>生活知识</Link>  */}
                 </div>
                 <div className="title"> {/* 卡片标题 */}
                     <h3>免费专区</h3><span> 新鲜有趣的内容</span>

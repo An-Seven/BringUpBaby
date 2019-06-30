@@ -3,6 +3,7 @@ html, baby, #root, .App, .register{
   @include rect(100%, 100%);
 }
 .register{
+  background-color: #fff;
   .header {
     @include rect(100%, .44rem);
   }

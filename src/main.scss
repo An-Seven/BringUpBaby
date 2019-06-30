@@ -3,6 +3,8 @@
 html, body, #root, .App, .container {
   @include rect(100%, 100%);
   overflow: auto;
+  width: 100%;
+  height: 100%;
 }
 $color2:#F479A4;
 .container {
