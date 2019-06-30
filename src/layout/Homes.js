@@ -8,6 +8,8 @@ import Chat from '../views/home/compon/chat/Chat';
 import Play from '../views/home/compon//play/Ply'
 import Trysee from '../views/home/compon/trysee/Trysee'
 import Grain from '../views/home/compon/grain/Grain';
+import Music from '../views/home/music/Music';
+import Bofang from '../views/home/music/bofang/Bofang';
 import Graindetail from '../views/home/compon/graindetail/Graindetail';
 class Homes extends React.Component {
   render() {
@@ -22,6 +24,8 @@ class Homes extends React.Component {
           <Route path='/homes/trysee' component={Trysee} />
           <Route path='/homes/chat' component={Chat} />
           <Route path='/homes/play' component={Play} />
+          <Route path='/homes/music' component={Music} />
+          <Route path='/homes/bofang' component={Bofang} />
           <Route path='/homes/graindetail/:id' component={Graindetail} />
         </Switch>
       </div> 
