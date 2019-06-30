@@ -1,5 +1,7 @@
 import React from 'react';
 import './register.scss';
+import axios from 'axios'
+import {login} from '@/api/data'
 import Back from '@/components/back/Back'
 class Register extends React.Component {
   state = {
@@ -18,7 +20,7 @@ class Register extends React.Component {
             </div>
             <div className="code">
               <input type="text" placeholder="输入验证码"/>
-              <button className="getCode">获取验证码</button>
+              <button className="getCode" onClick={this.getcode.bind(this)}>获取验证码</button>
             </div>
             <div className="link">
               <span className="shortcut">账号密码登录</span>
@@ -30,6 +32,15 @@ class Register extends React.Component {
         </div>
       </div>
     )
+  }
+  getcode(){
+   /*  axios.get('code/user/getcode/',{
+      params:{
+        name:13083640226
+      }
+    }).then(res=>{
+      console.log(res.data)
+    }) */
   }
 }
 export default Register;

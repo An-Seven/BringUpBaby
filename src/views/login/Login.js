@@ -1,6 +1,7 @@
 import React from 'react';
 import './login.scss';
 import Back from '@/components/back/Back'
+
 class Login extends React.Component {
   state = {
     list:[]

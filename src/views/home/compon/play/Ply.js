@@ -13,9 +13,10 @@ class Ply extends Component {
     /* ---------------start------------------ */
     const { value } = this.state;
     const data = [
-      { value: 0, label: '支付宝' },
-      { value: 1, label: '微信' },
-      { value: 2, label: '银联在线支付' },
+      { value: 0, label: '钱包' },
+      { value: 1, label: '支付宝' },
+      { value: 2, label: '微信' },
+      { value: 3, label: '银联在线支付' },
     ];
     /* ----------------end------------------- */
     return (
@@ -45,12 +46,15 @@ pay(){
   var str=''
   switch(this.state.value){
     case 0:
-      str="支付宝";
+      str="钱包";
         break;
     case 1:
-        str="微信";
+      str="支付宝";
         break;
     case 2:
+        str="微信";
+        break;
+    case 3:
         str="银联在线支付";
         break;
     default:

@@ -10,7 +10,7 @@ class Eat extends Component {
         <div className="eat_nav">
           <Link to='/homes/noeat'><img src="/icon_img/eat_01.png" alt=""/><span>能不能吃</span></Link>
           <a ><img src="/icon_img/eat_02.png" alt=""/><span>食谱</span></a>
-          <a ><img src="/icon_img/eat_03.png" alt=""/><span>听一听</span></a>
+          <Link to="/homes/listen"><img src="/icon_img/eat_03.png" alt=""/><span>听一听</span></Link>
         </div>
         <div className="eat_box">
           <p>今日知识推荐</p>

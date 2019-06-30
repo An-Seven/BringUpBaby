@@ -1,0 +1,31 @@
+.listen{
+    background-color: #fff;
+    .am-tabs{
+        margin-top: 1.05rem;
+    }
+    .am-tabs-default-bar-underline{
+        border-color: #FF6699;
+    }
+    .am-tabs-tab-bar-wrap{
+        position: fixed;width: 3.75rem;
+        top:1rem;z-index: 12;
+    }
+    .listen_left{
+         padding-top: .36rem;
+        p{
+            font-size: .17rem;
+            padding:.09rem 0 0 .23rem;
+        }
+    }
+    .listen_list{
+       
+        display: flex;
+        margin:0 auto;width: 3.6rem;
+        flex-wrap: wrap;
+        a{width: 1.01rem;height: 1.27rem;margin:.09rem;font-size:.15rem;color:#333333;
+            img{
+                width: 1.01rem;height: 1.01rem;
+            }
+        }
+    }
+}

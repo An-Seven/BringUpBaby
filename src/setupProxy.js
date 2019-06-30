@@ -9,5 +9,14 @@ module.exports=function(app){
                 "^/api": ""
               }
             })
+          ); 
+    app.use(
+            proxy("/code", {
+              target: "http://henqy.ddns.net:10080",
+              changeOrigin: true,
+              pathRewrite: {
+                "^/code": ""
+              }
+            })
           );
 }
