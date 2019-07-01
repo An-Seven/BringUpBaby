@@ -19,4 +19,13 @@ module.exports=function(app){
               }
             })
           );
+    app.use(
+            proxy("/php", {
+              target: "http://101.132.77.26",
+              changeOrigin: true,
+              pathRewrite: {
+                "^/php": ""
+              }
+            })
+          );
 }

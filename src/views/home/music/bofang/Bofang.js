@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Slider, WingBlank, WhiteSpace } from 'antd-mobile';
+import { Slider } from 'antd-mobile';
 import { Link } from 'react-router-dom';
 import Back from '@/components/back/Back';
 import './bofang.scss';

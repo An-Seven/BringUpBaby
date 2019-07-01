@@ -7,8 +7,13 @@ const RadioItem = Radio.RadioItem;
 class Ply extends Component {
   state = {
     value: 0,
+    price:''
   };
-  
+  componentDidMount(){
+    this.setState({
+      price:this.props.match.params.price
+    })
+  }
   render() {
     /* ---------------start------------------ */
     const { value } = this.state;
@@ -26,7 +31,7 @@ class Ply extends Component {
         <div className="ply">
           <div className="money">
            <p>需支付</p>
-           <p>99.90</p>
+           <p>{this.state.price}元</p>
            <p><span onClick={this.toorder.bind(this)}>订单详情<i className="fa fa-angle-right"></i></span></p>
             </div>
           <List>
@@ -60,7 +65,7 @@ pay(){
     default:
         return;
   }
-  console.log(str+"-------支付成功")
+  console.log(str+"---"+this.state.price+"元----支付成功")
 }
 onChange = (value) => {
   // console.log(value);

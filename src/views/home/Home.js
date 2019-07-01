@@ -15,7 +15,7 @@ class Home extends React.Component {
     }
    async componentWillMount() {
         this.setState({
-            course:await getDate('/getCourse'),
+            course:await getDate('/getCourse','post',{}),
             hotlist:await getDate('/getHot')
         })
     }
@@ -23,15 +23,14 @@ class Home extends React.Component {
         return (<div className="home" >
             <Navbar />
             <Banner />
-           
             {/* 路由下面的卡片 */}
 
             <div className="center">
             <div className="nav">
                     <Link to="/homes/zao"><img src="/icon_img/1.png" alt=""/>早教启蒙</Link>
-                    <a href=""><img src="/icon_img/2.png" alt=""/>家庭教育</a>
-                    <a href=""><img src="/icon_img/3.png" alt=""/>宝宝健康</a>
-                    <Link to="/homes/eat" href=""><img src="/icon_img/4.png" alt=""/>生活知识</Link> 
+                    <a ><img src="/icon_img/2.png" alt=""/>家庭教育</a>
+                    <a ><img src="/icon_img/3.png" alt=""/>宝宝健康</a>
+                    <Link to="/homes/eat" ><img src="/icon_img/4.png" alt=""/>生活知识</Link> 
                 </div>
                 <div className="title"> {/* 卡片标题 */}
                     <h3>免费专区</h3><span> 新鲜有趣的内容</span>
@@ -53,7 +52,7 @@ class Home extends React.Component {
                {
                    this.state.course.map(item=>{
                        return(
-                        <div onClick={()=>{this.props.history.push('/homes/detail')}} className="bar2" key={item.id}>
+                        <div onClick={()=>{this.props.history.push('/homes/detail/'+item.id)}} className="bar2" key={item.id}>
                         <img src='/img/teacher.png' alt="" />
                         <div className="bar2_right">
                             <p>{item.title}</p>

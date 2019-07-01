@@ -12,7 +12,7 @@ class Tresee extends Component {
           <h2>共五集</h2>
           <p>试看</p>
           <div className="trysee_list">
-             <a href="">
+             <a >
                  <img src="/icon_img/bo.png" alt=""/>
                  <div className='trysee_list_right'>
                      <span>试看课</span>
@@ -20,7 +20,7 @@ class Tresee extends Component {
                      <span>06:58</span>
                  </div>
              </a>
-             <a href="">
+             <a >
                  <img src="/icon_img/bo.png" alt=""/>
                  <div className='trysee_list_right'>
                      <span>试看课</span>

@@ -24,21 +24,11 @@ class Listen extends Component {
         <p>胎宝安睡曲</p>
         <div className="listen_list">
             <Link to="/homes/music"><img src="/icon_img/listen/listen_01.png" alt=""/> 小蝌蚪找妈妈</Link>
-            <a href=""><img src="/icon_img/listen/listen_01.png" alt=""/> 0-3岁必听 故事</a>
-            <a href=""><img src="/icon_img/listen/listen_01.png" alt=""/> 小蝌蚪找妈妈</a>
-            <a href=""><img src="/icon_img/listen/listen_01.png" alt=""/> 小蝌蚪找妈妈</a>
-            <a href=""><img src="/icon_img/listen/listen_01.png" alt=""/> 小蝌蚪找妈妈</a>
-            <a href=""><img src="/icon_img/listen/listen_01.png" alt=""/> 小蝌蚪找妈妈</a>
-            <a href=""><img src="/icon_img/listen/listen_01.png" alt=""/> 小蝌蚪找妈妈</a>
-            <a href=""><img src="/icon_img/listen/listen_01.png" alt=""/> 小蝌蚪找妈妈</a>
-            <a href=""><img src="/icon_img/listen/listen_01.png" alt=""/> 小蝌蚪找妈妈</a>
-            <a href=""><img src="/icon_img/listen/listen_01.png" alt=""/> 小蝌蚪找妈妈</a>
-            <a href=""><img src="/icon_img/listen/listen_01.png" alt=""/> 小蝌蚪找妈妈</a>
-            <a href=""><img src="/icon_img/listen/listen_01.png" alt=""/> 小蝌蚪找妈妈</a>
-            <a href=""><img src="/icon_img/listen/listen_01.png" alt=""/> 小蝌蚪找妈妈</a>
-            <a href=""><img src="/icon_img/listen/listen_01.png" alt=""/> 小蝌蚪找妈妈</a>
-            <a href=""><img src="/icon_img/listen/listen_01.png" alt=""/> 小蝌蚪找妈妈</a>
-            <a href=""><img src="/icon_img/listen/listen_01.png" alt=""/> 小蝌蚪找妈妈</a>
+            <a ><img src="/icon_img/listen/listen_01.png" alt=""/> 0-3岁必听 故事</a>
+            <a ><img src="/icon_img/listen/listen_01.png" alt=""/> 小蝌蚪找妈妈</a>
+            <a ><img src="/icon_img/listen/listen_01.png" alt=""/> 小蝌蚪找妈妈</a>
+            <a ><img src="/icon_img/listen/listen_01.png" alt=""/> 小蝌蚪找妈妈</a>
+            <a ><img src="/icon_img/listen/listen_01.png" alt=""/> 小蝌蚪找妈妈</a>
         </div>
       </div>
       <div className="listen_left listen_right">

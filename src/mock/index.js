@@ -32,7 +32,9 @@ const getBabylist = function(){
 //   }
 //   return arr
 // }
-const getCourse=()=>{
+const getCourse=(val)=>{
+  console.log(JSON.parse(val.body).id)
+  val=JSON.parse(val.body).id
   var arr=[]
   for(var i=0;i<2;i++){
     arr.push({
@@ -42,10 +44,16 @@ const getCourse=()=>{
       teacher_name:Mock.mock('@cfirst')+Mock.mock('@cname()'),
       price:Mock.mock({
         "price|1-100": 100
-      })
+      }).price,
+      content:"course"+i+'从婴幼儿发展规律特点出发，讲科学的视频课程和专业的教具相结合，一站式解决家长的所有难题。精心策划五大课程，更科学的培养体系，全面发展孩子的五大能力。'
     })
   }
-  return arr
+  if(val){
+    return arr.filter(item=>item.id==val)[0]
+  }else{
+    return arr
+  }
+  
 }
 const getHot=()=>{
     var arr=[]
@@ -117,7 +125,7 @@ if(val){
 }
 // console.log(getEat())
 Mock.mock('http://wyj.taogou1.cn/getBanner', 'get',getBanner)
-Mock.mock('http://wyj.taogou1.cn/getCourse', 'get',getCourse)
+Mock.mock('http://wyj.taogou1.cn/getCourse', 'post',getCourse)
 Mock.mock('http://wyj.taogou1.cn/getHot', 'get',getHot)
 Mock.mock('http://wyj.taogou1.cn/getEat', 'get',getEat)
 Mock.mock('http://wyj.taogou1.cn/getNoeat', 'get',getNoeat)

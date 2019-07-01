@@ -19,8 +19,13 @@ export const  getDate2=(url,method,data)=>{
          resolve( res.data)
         })
   })
- 
 }
-console.log(getDate2('/getBanner'))
-
-getDate2('/getBanner').then(data=>console.log(data,'000'))
+import { Toast} from 'antd-mobile';
+export const Ti=(val,content)=>{
+    if(val){
+        Toast.success(content, 2);
+    }else{
+        Toast.fail(content, 3);
+    }
+    
+}
