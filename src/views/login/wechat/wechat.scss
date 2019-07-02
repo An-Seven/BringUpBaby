@@ -84,6 +84,23 @@ html, baby, #root, .App, .wechat{
          right: 0;
        }
      }
+     .agree{
+       color: #fff;
+       background-color:#F479A4;
+       @include rect(1.84rem, .41rem);
+       margin: 0 auto;
+       text-align: center;
+       line-height: .41rem;
+       margin-bottom: .15rem;
+     }
+     .reject{
+       color:#F479A4;
+       background-color: #E6E6E6;
+       @include rect(1.84rem, .41rem);
+       margin: 0 auto;
+       text-align: center;
+       line-height: .41rem;
+     }
    }
   }
 } 

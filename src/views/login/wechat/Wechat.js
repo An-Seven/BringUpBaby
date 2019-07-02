@@ -34,6 +34,8 @@ class Wechat extends React.Component {
               <h3>新建用户信息</h3>
               <img src="/icon_img/wechat-jian.png" className="right"></img>
             </div>
+            <div className="agree">同意</div>
+            <div className="reject">拒绝</div>
           </div>
         </div>
       </div>

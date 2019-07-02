@@ -1,0 +1,10 @@
+@import '@/lib/reset.scss';
+body, html,.root, .UserApp, .Order {
+  @include rect(100%, 100%);
+}
+.Order{
+  .content{
+    margin-top:.45rem;
+    @include rect(100%,100%);
+  }
+}

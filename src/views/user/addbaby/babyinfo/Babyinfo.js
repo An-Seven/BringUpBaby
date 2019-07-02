@@ -20,6 +20,15 @@ class Babyinfo extends React.Component {
             <p><span>昵称</span><i><input type="text"/></i></p>
             <p><span>生日</span><i><input type="text"/></i></p>
           </div>
+
+          <div className="relative">
+            <p>与宝贝的关系</p>
+            <ul>
+              <li className="mom checked">妈妈</li>
+              <li className="dad">爸爸</li>
+              <li className="other">其他</li>
+            </ul>
+          </div>
         </div>
       </div>
     )

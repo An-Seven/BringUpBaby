@@ -11,7 +11,6 @@ body, html,.root, .App, .information, .UserApp {
   }
   .content {
     @include flex();
-    @include rect(100%, 100%);
     .name {
       width: 100%;
       margin: .15rem 0 ;

@@ -1,0 +1,24 @@
+@import '@/lib/reset.scss';
+body, html, .root, .App,.UserApp, .vip {
+  @include rect(100%, 100%);
+}
+.vip{
+  @include flexbox();
+  @include flex-direction(column);
+  .top{
+    @include rect(100%, .44rem);
+  }
+  .user{
+    @include rect(100% ,1rem);
+    background-color: #F479A4;
+    @include flexbox();
+    @include align-items();
+    @include justify-content();
+    img{
+      @include rect(.7rem, .7rem);
+    }
+  }
+  .content{
+    @include flex();
+  }
+}
