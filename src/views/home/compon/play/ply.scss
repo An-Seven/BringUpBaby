@@ -54,14 +54,18 @@ $color:#F479A4;
   }
   .am-list-body{
     .am-list-item:nth-of-type(1) .am-list-content{
-      background:url(/icon_img/zhi.png) no-repeat left;
+      background:url(/icon_img/qian.png) no-repeat left;
       background-size: .35rem;
     }
     .am-list-item:nth-of-type(2) .am-list-content{
-      background:url(/icon_img/wei.png) no-repeat left;
+      background:url(/icon_img/zhi.png) no-repeat left;
       background-size: .35rem;
     }
     .am-list-item:nth-of-type(3) .am-list-content{
+      background:url(/icon_img/wei.png) no-repeat left;
+      background-size: .35rem;
+    }
+    .am-list-item:nth-of-type(4) .am-list-content{
       background:url(/icon_img/yin.png) no-repeat left;
       background-size: .35rem;
     }

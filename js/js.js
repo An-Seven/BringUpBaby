@@ -22,7 +22,16 @@ function aaa(val){
         return obj;
     }
 }
-console.log(aaa(2))
+console.log(aaa(2)) 
+function fn(n){
+if(n==1){
+    return n
+}else{
+    
+   return n*fn(n-1)
+}
+}
+console.log(fn(5),'阶乘')
 
 
 

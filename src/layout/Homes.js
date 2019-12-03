@@ -11,6 +11,7 @@ import Grain from '../views/home/compon/grain/Grain';
 import Music from '../views/home/music/Music';
 import Bofang from '../views/home/music/bofang/Bofang';
 import Graindetail from '../views/home/compon/graindetail/Graindetail';
+import Listen from '../views/home/compon/listen/Lister';
 class Homes extends React.Component {
   render() {
     return (
@@ -19,11 +20,12 @@ class Homes extends React.Component {
           <Route path='/homes/zao' component={Zao} />
           <Route path='/homes/eat' component={Eat} />
           <Route path='/homes/noeat' component={Noeat} />
+          <Route path='/homes/listen' component={Listen} />
           <Route path='/homes/grain' component={Grain} />
-          <Route path='/homes/detail' component={Detail} />
+          <Route path='/homes/detail/:id' component={Detail} />
           <Route path='/homes/trysee' component={Trysee} />
           <Route path='/homes/chat' component={Chat} />
-          <Route path='/homes/play' component={Play} />
+          <Route path='/homes/play/:price' component={Play} />
           <Route path='/homes/music' component={Music} />
           <Route path='/homes/bofang' component={Bofang} />
           <Route path='/homes/graindetail/:id' component={Graindetail} />

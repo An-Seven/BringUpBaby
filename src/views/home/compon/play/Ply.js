@@ -7,15 +7,21 @@ const RadioItem = Radio.RadioItem;
 class Ply extends Component {
   state = {
     value: 0,
+    price:''
   };
-  
+  componentDidMount(){
+    this.setState({
+      price:this.props.match.params.price
+    })
+  }
   render() {
     /* ---------------start------------------ */
     const { value } = this.state;
     const data = [
-      { value: 0, label: '支付宝' },
-      { value: 1, label: '微信' },
-      { value: 2, label: '银联在线支付' },
+      { value: 0, label: '钱包' },
+      { value: 1, label: '支付宝' },
+      { value: 2, label: '微信' },
+      { value: 3, label: '银联在线支付' },
     ];
     /* ----------------end------------------- */
     return (
@@ -25,7 +31,7 @@ class Ply extends Component {
         <div className="ply">
           <div className="money">
            <p>需支付</p>
-           <p>99.90</p>
+           <p>{this.state.price}元</p>
            <p><span onClick={this.toorder.bind(this)}>订单详情<i className="fa fa-angle-right"></i></span></p>
             </div>
           <List>
@@ -45,18 +51,21 @@ pay(){
   var str=''
   switch(this.state.value){
     case 0:
-      str="支付宝";
+      str="钱包";
         break;
     case 1:
-        str="微信";
+      str="支付宝";
         break;
     case 2:
+        str="微信";
+        break;
+    case 3:
         str="银联在线支付";
         break;
     default:
         return;
   }
-  console.log(str+"-------支付成功")
+  console.log(str+"---"+this.state.price+"元----支付成功")
 }
 onChange = (value) => {
   // console.log(value);
